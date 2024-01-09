@@ -21,6 +21,7 @@
  */
 
 /* Oceans Theme Updater */
+add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 function oceanwp_child_enqueue_parent_style() {
 
 	// Dynamically get the version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update the theme).
@@ -32,7 +33,7 @@ function oceanwp_child_enqueue_parent_style() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
 
 
 
