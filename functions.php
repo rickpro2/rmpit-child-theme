@@ -37,13 +37,6 @@ function oceanwp_child_enqueue_parent_style() {
 
 
 
-
-
-
-
-
-
-
 /* RMPIT Theme Updater */
 // Automatic theme updates from the GitHub repository
 add_filter('pre_set_site_transient_update_themes', 'automatic_GitHub_updates', 100, 1);
