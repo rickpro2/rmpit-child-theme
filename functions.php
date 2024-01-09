@@ -70,3 +70,15 @@ function automatic_GitHub_updates($data) {
 }
 
 
+
+
+
+/* Require Lib Folder & Files */
+require( get_stylesheet_directory() . '/lib/A.php' );
+
+
+
+
+
+/* Required plugins */
+require_once get_stylesheet_directory() . '/lib/bundled-plugins/required-plugins.php';
