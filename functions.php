@@ -206,3 +206,25 @@ add_role(
 
 
 
+/**
+ * **Admin Dashboard Footer
+ *
+ * to make something blank. use the:           __return_empty_string
+ */
+/**
+ * Remove left admin footer text
+ */
+add_filter( 'admin_footer_text', 'CevE8X_left_footer_admin' );
+
+/**
+ * Remove right admin footer text (where the WordPress version nr is)
+ */
+add_filter( 'update_footer', 'e9EJvG_right_footer_admin', 11 );
+
+function CevE8X_left_footer_admin () {
+	echo 'Theme designed and developed by <a href="http://www.rmpit.com" target="_blank">RMPIT</a> and powered by <a href="http://wordpress.org" target="_blank">WordPress</a>.';
+}
+
+function e9EJvG_right_footer_admin () {
+	echo 'Have fun!';
+}
