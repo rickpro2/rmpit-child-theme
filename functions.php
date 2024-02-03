@@ -205,20 +205,12 @@ add_role(
 
 
 
+/* Admin Dashoboard Footer */
 
-/**
- * **Admin Dashboard Footer
- *
- * to make something blank. use the:           __return_empty_string
- */
-/**
- * Remove left admin footer text
- */
+//to make something blank. use the:           __return_empty_string
+
 add_filter( 'admin_footer_text', 'CevE8X_left_footer_admin' );
 
-/**
- * Remove right admin footer text (where the WordPress version nr is)
- */
 add_filter( 'update_footer', 'e9EJvG_right_footer_admin', 11 );
 
 function CevE8X_left_footer_admin () {
@@ -228,3 +220,8 @@ function CevE8X_left_footer_admin () {
 function e9EJvG_right_footer_admin () {
 	echo 'Have fun!';
 }
+
+
+
+
+
