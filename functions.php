@@ -225,3 +225,9 @@ function e9EJvG_right_footer_admin () {
 
 
 
+/* Require Lib Folder & Files */
+require( get_stylesheet_directory() . '/lib/scripts.php' );
+
+
+
+
