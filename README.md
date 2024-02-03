@@ -17,3 +17,4 @@ Simply deactivate and delete the plugin.
 = 0.1 =
 * Created Admin/Webmaster User Role
 * Customised the Admin Dashboard Footer
+* Changed the "Howdy" Text
