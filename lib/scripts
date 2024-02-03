@@ -4,6 +4,19 @@
 
 
 
+/* Changes the Howdy next to the name */
+add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu', 11 );
+
+function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
+$user_id = get_current_user_id();
+$current_user = wp_get_current_user();
+$profile_url = get_edit_profile_url( $user_id );
+
+if ( 0 != $user_id ) {
+
+
+
+
 
 add_action('init','wpb_admin_account');
 
