@@ -16,3 +16,4 @@ Simply deactivate and delete the plugin.
 ### Changelog
 = 0.1 =
 * Created Admin/Webmaster User Role
+* Customised the Admin Dashboard Footer
