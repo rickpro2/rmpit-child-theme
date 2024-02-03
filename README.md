@@ -15,4 +15,4 @@ Simply deactivate and delete the plugin.
 
 ### Changelog
 = 0.1 =
-* Theme released.
+* Created Admin/Webmaster User Role
