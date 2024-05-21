@@ -36,8 +36,24 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
-/* Require Lib Folder & Files */
-require( get_stylesheet_directory() . '/lib/scripts.php' );
+// Include the library.
+require get_template_directory() . '/plugin-update-checker/plugin-update-checker.php';
+
+// Set up the update checker.
+add_action('init', function () {
+    $theme_update_checker = Puc_v4_Factory::buildUpdateChecker(
+        'https://github.com/yourusername/my-custom-theme/',
+        __FILE__,
+        'my-custom-theme'
+    );
+
+    // Optional: Set the branch that contains the stable release.
+    $theme_update_checker->setBranch('main');
+
+    // Optional: If you have a private repository, provide access token.
+    // $theme_update_checker->setAuthentication('your-token-here');
+});
+
 
 
 
