@@ -42,9 +42,9 @@ require get_template_directory() . '/plugin-update-checker/plugin-update-checker
 // Set up the update checker.
 add_action('init', function () {
     $theme_update_checker = Puc_v4_Factory::buildUpdateChecker(
-        'https://github.com/yourusername/my-custom-theme/',
+        'https://github.com/rickpro2/wordpress-child-theme',
         __FILE__,
-        'my-custom-theme'
+        'wordpress-child-theme'
     );
 
     // Optional: Set the branch that contains the stable release.
