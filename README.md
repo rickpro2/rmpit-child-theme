@@ -14,7 +14,7 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the plugin. 
 
 ### Changelog
-= 0.1 =
+= 1.0 =
 * Created Admin/Webmaster User Role
 * Customised the Admin Dashboard Footer
 * Changed the "Howdy" Text
