@@ -83,29 +83,33 @@ function rmpit_register_required_plugins() {
 			'name'               => 'All-in-One WP Migration',
 			'slug'               => 'all-in-one-wp-migration',
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration.zip',
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'required'           => true,
+			'force_activation'   => true,
 		),
 		
 		array(
-			'name'               => 'All-in-One WP Migration Unlimited Extension', // The plugin name.
-			'slug'               => 'all-in-one-wp-migration-unlimited-extension', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'name'               => 'All-in-One WP Migration Unlimited Extension',
+			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
+			'required'           => true, 
+			'force_activation'   => true, 
+		),
+
+		array(
+			'name'               => 'Solid Security Pro',
+			'slug'               => 'ithemes-security-pro',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ithemes-security-pro.zip',
+		),
+
+		array(
+			'name'      => 'iThemes Security',
+			'slug'      => 'better-wp-security',
 		),
 
 
 
 
-
-
-
-
-
-
-
-
+		
 
 		
 		array(
@@ -120,11 +124,7 @@ function rmpit_register_required_plugins() {
 
 
 
-		array(
-			'name'      => 'iThemes Security',
-			'slug'      => 'better-wp-security',
-			'required'  => true,
-		),
+
 
 		array(
 			'name'      => 'Really Simple SSL',
@@ -234,11 +234,7 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'publishpress-checklists', // The plugin slug
 		),
 		
-		array(
-			'name'               => 'Solid Security Pro', // The plugin name.
-			'slug'               => 'ithemes-security-pro', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ithemes-security-pro.zip', // The plugin source.
-		),
+
 		
 		array(
 			'name'               => 'WPCode – Insert Headers and Footers + Custom Code Snippets – WordPress Code Manager', // The plugin name.
