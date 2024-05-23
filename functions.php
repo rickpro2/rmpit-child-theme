@@ -287,4 +287,27 @@ add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
 
 
 
+
+
+
+
+
+/* Github updater */
+require 'plugin-update-checker-5.4/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/rickpro2/rmpit-child-theme/',
+	__FILE__,
+	'rmpit-child-theme'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+//$myUpdateChecker->setAuthentication('your-token-here');
+
+
+
 /* Stop Adding Functions Below this Line */
