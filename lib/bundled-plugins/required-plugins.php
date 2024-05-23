@@ -114,7 +114,7 @@ function rmpit_register_required_plugins() {
 		array(
 			'name'      => 'User Role Editor',
 			'slug'      => 'user-role-editor',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip',
 			'required'  => true,
 			'force_activation'   => true,
 		),
@@ -122,7 +122,7 @@ function rmpit_register_required_plugins() {
 		array(
 			'name'               => 'Editor Switcher', // The plugin name.
 			'slug'               => 'editor-switcher', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/editor-switcher.zip', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/editor-switcher.zip',
 			'required'  => true,
 			'force_activation'   => true,
 		),
@@ -162,13 +162,13 @@ function rmpit_register_required_plugins() {
 		array(
 			'name'      => 'User Switching',
 			'slug'      => 'user-switching',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-switching.1.7.0.zip', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-switching.1.7.0.zip',
 		),
 
 		array(
 			'name'      => 'Username Changer',
 			'slug'      => 'username-changer',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/username-changer.3.2.2.zip', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/username-changer.3.2.2.zip',
 		),
 		
 		array(
@@ -186,23 +186,38 @@ function rmpit_register_required_plugins() {
 			'name'      => 'Really Simple SSL',
 			'slug'      => 'really-simple-ssl',
 		),
-
-
-
 		
-
-
-		
-
-		
-
 		array(
 			'name'      => 'Ocean Extra',
 			'slug'      => 'ocean-extra',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-extra.2.2.1.zip', // The plugin source.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-extra.2.2.1.zip',
+			'force_activation'   => true,
 			'required'  => true,
 		),
+		
+		array(
+			'name'      => 'Ocean Social Sharing',
+			'slug'      => 'ocean-social-sharing',
+		),
+				
+		array(
+			'name'      => 'Ocean Product Sharing',
+			'slug'      => 'ocean-product-sharing',
+		),
+				
+		array(
+			'name'      => 'Ocean Modal Window',
+			'slug'      => 'ocean-modal-window',
+		),
+	
+		array(
+			'name'      => 'Ocean Modal Window',
+			'slug'      => 'ocean-modal-window',
+		),
+
+		
+
+
 		
 
 
