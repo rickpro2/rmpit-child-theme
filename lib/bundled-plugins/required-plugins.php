@@ -74,6 +74,21 @@ function rmpit_register_required_plugins() {
 		),
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		array(
 			'name'               => 'All-in-One WP Migration', // The plugin name.
 			'slug'               => 'all-in-one-wp-migration', // The plugin slug (typically the folder name).
@@ -246,6 +261,13 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-elementor-widgets.2.4.3.zip', // The plugin source.
 		),
 
+
+
+
+
+
+
+        
 
 
 	);
