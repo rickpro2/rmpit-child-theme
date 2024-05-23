@@ -74,32 +74,39 @@ function rmpit_register_required_plugins() {
 		),
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		array(
+			'name'      => 'Dashboard Welcome for Elementor',
+			'slug'      => 'dashboard-welcome-for-elementor',
+		),
 
 		array(
-			'name'               => 'All-in-One WP Migration', // The plugin name.
-			'slug'               => 'all-in-one-wp-migration', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration.zip', // The plugin source.
+			'name'               => 'All-in-One WP Migration',
+			'slug'               => 'all-in-one-wp-migration',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration.zip',
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 		),
 		
 		array(
 			'name'               => 'All-in-One WP Migration Unlimited Extension', // The plugin name.
 			'slug'               => 'all-in-one-wp-migration-unlimited-extension', // The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 		),
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		array(
 			'name'      => 'Broken Link Checker',
@@ -111,11 +118,7 @@ function rmpit_register_required_plugins() {
 			'slug'      => 'code-snippets',
 		),
 
-		array(
-			'name'      => 'Dashboard Welcome for Elementor',
-			'slug'      => 'dashboard-welcome-for-elementor',
-			'required'  => true,
-		),
+
 
 		array(
 			'name'      => 'iThemes Security',
