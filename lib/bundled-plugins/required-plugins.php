@@ -159,40 +159,6 @@ function rmpit_register_required_plugins() {
 			'slug'      => 'wp-reset',
 		),
 
-		
-
-
-
-
-		
-
-		
-		array(
-			'name'      => 'Broken Link Checker',
-			'slug'      => 'broken-link-checker',
-		),
-
-		array(
-			'name'      => 'Code Snippets',
-			'slug'      => 'code-snippets',
-		),
-
-		array(
-			'name'      => 'Really Simple SSL',
-			'slug'      => 'really-simple-ssl',
-		),
-
-		array(
-			'name'      => 'Simple Page Ordering',
-			'slug'      => 'simple-page-ordering',
-			'force_activation'   => true,
-		),
-
-		array(
-			'name'      => 'Temporary Login Without Password',
-			'slug'      => 'temporary-login-without-password',
-		),
-
 		array(
 			'name'      => 'User Switching',
 			'slug'      => 'user-switching',
@@ -204,6 +170,31 @@ function rmpit_register_required_plugins() {
 			'slug'      => 'username-changer',
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/username-changer.3.2.2.zip', // The plugin source.
 		),
+		
+		array(
+			'name'      => 'Simple Page Ordering',
+			'slug'      => 'simple-page-ordering',
+			'force_activation'   => true,
+		),
+		
+		array(
+			'name'      => 'Code Snippets',
+			'slug'      => 'code-snippets',
+		),
+
+		array(
+			'name'      => 'Really Simple SSL',
+			'slug'      => 'really-simple-ssl',
+		),
+
+
+
+		
+
+
+		
+
+		
 
 		array(
 			'name'      => 'Ocean Extra',
@@ -213,10 +204,6 @@ function rmpit_register_required_plugins() {
 			'required'  => true,
 		),
 		
-
-
-
-			
 
 
 		
