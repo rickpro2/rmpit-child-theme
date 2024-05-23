@@ -228,63 +228,23 @@ function rmpit_register_required_plugins() {
 			'required'  => true,
 		),
 		
-
-
-		
-
-
+		array(
+			'name'               => 'Ocean Elementor Widgets', // The plugin name.
+			'slug'               => 'ocean-elementor-widgets', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-elementor-widgets.2.4.4.zip', // The plugin source.
+		),
+	
+		array(
+			'name'               => 'Ocean Sticky Header', // The plugin name.
+			'slug'               => 'ocean-sticky-header', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip', // The plugin source.
+		),
 		
 		array(
 			'name'               => 'WooCrack Updater', // The plugin name.
 			'slug'               => 'woocrack', // The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip', // The plugin source.
 		),
-
-		array(
-			'name'               => 'Ocean White Label', // The plugin name.
-			'slug'               => 'ocean-white-label', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-white-label.2.0.3.zip', // The plugin source.
-		),
-
-		array(
-			'name'               => 'Ocean Pro Demos', // The plugin name.
-			'slug'               => 'ocean-pro-demos', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-pro-demos.1.4.7.zip', // The plugin source.
-		),		
-		
-		array(
-			'name'               => 'Ocean Sticky Header', // The plugin name.
-			'slug'               => 'ocean-sticky-header', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.0.zip', // The plugin source.
-		),
-
-		array(
-			'name'               => 'White Label CMS', // The plugin name.
-			'slug'               => 'white-label-cms', // The plugin slug
-		),
-		
-		array(
-			'name'               => 'PublishPress Checklists: Pre-Publishing Approval Checklist – OpenAI Post Scanner', // The plugin name.
-			'slug'               => 'publishpress-checklists', // The plugin slug
-		),
-			
-
-		
-
-		
-		array(
-			'name'               => 'Ocean Elementor Widgets', // The plugin name.
-			'slug'               => 'ocean-elementor-widgets', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-elementor-widgets.2.4.3.zip', // The plugin source.
-		),
-
-
-
-
-
-
-
-        
 
 
 	);

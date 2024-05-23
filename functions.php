@@ -293,7 +293,7 @@ add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
 
 
 /* Github updater */
-require 'plugin-update-checker-5.4/plugin-update-checker.php';
+require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
