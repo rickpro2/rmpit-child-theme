@@ -119,7 +119,13 @@ function rmpit_register_required_plugins() {
 			'force_activation'   => true,
 		),
 
-
+		array(
+			'name'               => 'Editor Switcher', // The plugin name.
+			'slug'               => 'editor-switcher', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/editor-switcher.zip', // The plugin source.
+			'required'  => true,
+			'force_activation'   => true,
+		),
 
 
 		
@@ -247,13 +253,7 @@ function rmpit_register_required_plugins() {
 			'slug'      => 'woocommerce',
 		),
 		
-		array(
-			'name'               => 'Editor Switcher', // The plugin name.
-			'slug'               => 'editor-switcher', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/editor-switcher.zip', // The plugin source.
-			'required'  => true,
-			'force_activation'   => true,
-		),
+
 		
 		array(
 			'name'               => 'Ocean Elementor Widgets', // The plugin name.
