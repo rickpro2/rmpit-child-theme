@@ -133,6 +133,11 @@ function rmpit_register_required_plugins() {
 			'required'  => true,
 			'force_activation'   => true,
 		),
+		
+		array(
+			'name'      => 'Yoast SEO',
+			'slug'      => 'wordpress-seo',
+		),
 
 		array(
 			'name'      => 'WooCommerce',
@@ -214,7 +219,14 @@ function rmpit_register_required_plugins() {
 			'name'      => 'Ocean Modal Window',
 			'slug'      => 'ocean-modal-window',
 		),
-
+		
+		array(
+			'name'      => 'Ocean Pro Demos',
+			'slug'      => 'ocean-pro-demos',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
+			'force_activation'   => true,
+			'required'  => true,
+		),
 		
 
 
