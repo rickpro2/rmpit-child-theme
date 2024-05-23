@@ -75,6 +75,11 @@ function rmpit_register_required_plugins() {
 */
 
 		array(
+			'name'      => 'Elementor Website Builder – More than Just a Page Builder',
+			'slug'      => 'elementor',
+		),
+		
+		array(
 			'name'      => 'Dashboard Welcome for Elementor',
 			'slug'      => 'dashboard-welcome-for-elementor',
 		),
@@ -106,8 +111,20 @@ function rmpit_register_required_plugins() {
 			'slug'      => 'better-wp-security',
 		),
 
+		array(
+			'name'      => 'User Role Editor',
+			'slug'      => 'user-role-editor',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', // The plugin source.
+			'required'  => true,
+			'force_activation'   => true,
+		),
 
 
+
+
+		
+
+		
 
 		
 
@@ -121,10 +138,6 @@ function rmpit_register_required_plugins() {
 			'name'      => 'Code Snippets',
 			'slug'      => 'code-snippets',
 		),
-
-
-
-
 
 		array(
 			'name'      => 'Really Simple SSL',
@@ -140,14 +153,6 @@ function rmpit_register_required_plugins() {
 		array(
 			'name'      => 'Temporary Login Without Password',
 			'slug'      => 'temporary-login-without-password',
-		),
-
-		array(
-			'name'      => 'User Role Editor',
-			'slug'      => 'user-role-editor',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', // The plugin source.
-			'required'  => true,
-			'force_activation'   => true,
 		),
 
 		array(
@@ -184,12 +189,8 @@ function rmpit_register_required_plugins() {
 			'name'      => 'Yoast Duplicate Post',
 			'slug'      => 'duplicate-post',
 		),
-				
-		array(
-			'name'      => 'Elementor Website Builder – More than Just a Page Builder',
-			'slug'      => 'elementor',
-		),
-		
+			
+
 		array(
 			'name'      => 'File Manager',
 			'slug'      => 'wp-file-manager',
