@@ -126,11 +126,43 @@ function rmpit_register_required_plugins() {
 			'required'  => true,
 			'force_activation'   => true,
 		),
+		
+		array(
+			'name'      => 'Yoast Duplicate Post',
+			'slug'      => 'duplicate-post',
+			'required'  => true,
+			'force_activation'   => true,
+		),
 
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+		),
+
+		array(
+			'name'      => 'File Manager',
+			'slug'      => 'wp-file-manager',
+		),
+		
+		array(
+			'name'      => 'Offload Media – Cloud Storage',
+			'slug'      => 'offload-media-cloud-storage',
+		),
+		
+		array(
+			'name'      => 'WooCommerce Square',
+			'slug'      => 'woocommerce-square',
+		),
+
+		array(
+			'name'      => 'WP Reset – Most Advanced WordPress Reset Tool',
+			'slug'      => 'wp-reset',
+		),
 
 		
 
-		
+
+
 
 		
 
@@ -181,31 +213,12 @@ function rmpit_register_required_plugins() {
 			'required'  => true,
 		),
 		
-		array(
-			'name'      => 'WooCommerce Square',
-			'slug'      => 'woocommerce-square',
-		),
 
-		array(
-			'name'      => 'WP Reset – Most Advanced WordPress Reset Tool',
-			'slug'      => 'wp-reset',
-		),
 
-		array(
-			'name'      => 'Yoast Duplicate Post',
-			'slug'      => 'duplicate-post',
-		),
+
 			
 
-		array(
-			'name'      => 'File Manager',
-			'slug'      => 'wp-file-manager',
-		),
-		
-		array(
-			'name'      => 'Offload Media – Cloud Storage',
-			'slug'      => 'offload-media-cloud-storage',
-		),
+
 		
 		array(
 			'name'               => 'WooCrack Updater', // The plugin name.
@@ -240,18 +253,8 @@ function rmpit_register_required_plugins() {
 			'name'               => 'PublishPress Checklists: Pre-Publishing Approval Checklist – OpenAI Post Scanner', // The plugin name.
 			'slug'               => 'publishpress-checklists', // The plugin slug
 		),
-		
+			
 
-		
-		array(
-			'name'               => 'WPCode – Insert Headers and Footers + Custom Code Snippets – WordPress Code Manager', // The plugin name.
-			'slug'               => 'insert-headers-and-footers', // The plugin slug
-		),
-		
-		array(
-			'name'      => 'WooCommerce',
-			'slug'      => 'woocommerce',
-		),
 		
 
 		
