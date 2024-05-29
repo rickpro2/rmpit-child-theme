@@ -14,6 +14,10 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the plugin. 
 
 ### Changelog
+= 1.5 =
+* Updated the Required Plugins List
+-
+
 = 1.3 =
 * Removed the 5.4 from Plugin-update-Checker File Name
 * Removed the Elementor Widgets 2.4.3 Plugin
