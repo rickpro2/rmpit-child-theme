@@ -82,6 +82,56 @@ function my_theme_register_required_plugins() {
 			'required'           => true,
 		),
 		
+		array(
+			'name'               => 'All-in-One WP Migration',
+			'slug'               => 'all-in-one-wp-migration',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration.zip',
+			'required'           => true,
+			'force_activation'   => true,
+		),
+		
+		array(
+			'name'               => 'All-in-One WP Migration Unlimited Extension',
+			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
+			'required'           => true, 
+			'force_activation'   => true, 
+		),
+		
+		array(
+			'name'               => 'User Role Editor',
+			'slug'               => 'user-role-editor', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
+
+		array(
+			'name'               => 'Yoast Duplicate Post',
+			'slug'               => 'duplicate-post', 
+			'required'           => true, 
+			'force_activation'   => true,
+		),
+		
+		array(
+			'name'               => 'User Role Editor',
+			'slug'               => 'user-role-editor', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
+
+/* All OceanWP Plugins */
+		array(
+			'name'               => 'Ocean Extra',
+			'slug'               => 'ocean-extra', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-extra.2.2.1.zip', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
 
 	);
 
