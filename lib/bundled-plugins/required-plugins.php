@@ -76,6 +76,12 @@ function my_theme_register_required_plugins() {
 
 				// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
+			'name'               => 'WooCrack Updater',
+			'slug'               => 'woocrack',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
+		),		
+
+		array(
 			'name'               => 'Elementor Website Builder – More than Just a Page Builder',
 			'slug'               => 'elementor',
 			'force_deactivation' => true,
@@ -141,10 +147,23 @@ function my_theme_register_required_plugins() {
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
+		
 		array(
 			'name'               => 'Ocean Pro Demos',
 			'slug'               => 'ocean-pro-demos', 
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
+		),
+	
+		array(
+			'name'               => 'Ocean Elementor Widgets',
+			'slug'               => 'ocean-elementor-widgets', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-elementor-widgets.2.4.4.zip',
+		),
+			
+		array(
+			'name'               => 'Ocean Sticky Header',
+			'slug'               => 'ocean-sticky-header', 
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
 		),
 
 	);

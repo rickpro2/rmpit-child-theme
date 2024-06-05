@@ -1,4 +1,11 @@
 <?php
+// Exit if accessed directly
+if ( !defined( 'ABSPATH' ) ) exit;
+
+
+
+
+
 /**
  * OceanWP Child Theme Functions
  *
