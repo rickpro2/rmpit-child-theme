@@ -130,5 +130,43 @@ add_filter( 'login_errors', 'wpfme_login_obscure' );
 
 
 
+
+/* Code for Switching Editors */
+function custom_editor_switcher() {
+  if (current_user_can('manage_options')) { // Only display for users who can manage options
+      $current_editor = get_option('classic-editor-replace');
+      $checked_classic = ($current_editor === 'block') ? '' : 'checked';
+      $checked_gutenberg = ($current_editor === 'block') ? 'checked' : '';
+      ?>
+      <h3>Editor Switcher</h3>
+      <form method="post" action="options.php">
+          <?php settings_fields('writing'); ?>
+          <table class="form-table">
+              <tr>
+                  <th scope="row">Default Editor for all users</th>
+                  <td>
+                      <label for="classic-editor">
+                          <input type="radio" name="classic-editor-replace" id="classic-editor" value="classic" <?php echo $checked_classic; ?>>
+                          Classic Editor
+                      </label>
+                      <br>
+                      <label for="gutenberg-editor">
+                          <input type="radio" name="classic-editor-replace" id="gutenberg-editor" value="block" <?php echo $checked_gutenberg; ?>>
+                          Gutenberg (Block) Editor
+                      </label>
+                  </td>
+              </tr>
+          </table>
+          <p class="submit">
+              <input type="submit" class="button-primary" value="Save Changes">
+          </p>
+      </form>
+      <?php
+  }
+}
+add_action('admin_notices', 'custom_editor_switcher');
+
+
+
 /* Stop Adding Functions Below this Line */
 ?>
