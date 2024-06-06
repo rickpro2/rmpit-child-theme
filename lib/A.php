@@ -130,43 +130,31 @@ add_filter( 'login_errors', 'wpfme_login_obscure' );
 
 
 
+// Hook into the theme switch action
+add_action( 'switch_theme', 'delete_specified_plugins_on_theme_change' );
 
-/* Code for Switching Editors */
-function custom_editor_switcher() {
-  if (current_user_can('manage_options')) { // Only display for users who can manage options
-      $current_editor = get_option('classic-editor-replace');
-      $checked_classic = ($current_editor === 'block') ? '' : 'checked';
-      $checked_gutenberg = ($current_editor === 'block') ? 'checked' : '';
-      ?>
-      <h3>Editor Switcher</h3>
-      <form method="post" action="options.php">
-          <?php settings_fields('writing'); ?>
-          <table class="form-table">
-              <tr>
-                  <th scope="row">Default Editor for all users</th>
-                  <td>
-                      <label for="classic-editor">
-                          <input type="radio" name="classic-editor-replace" id="classic-editor" value="classic" <?php echo $checked_classic; ?>>
-                          Classic Editor
-                      </label>
-                      <br>
-                      <label for="gutenberg-editor">
-                          <input type="radio" name="classic-editor-replace" id="gutenberg-editor" value="block" <?php echo $checked_gutenberg; ?>>
-                          Gutenberg (Block) Editor
-                      </label>
-                  </td>
-              </tr>
-          </table>
-          <p class="submit">
-              <input type="submit" class="button-primary" value="Save Changes">
-          </p>
-      </form>
-      <?php
-  }
+function delete_specified_plugins_on_theme_change() {
+    // Specify the plugins to delete
+    $plugins_to_delete = array(
+        'all-in-one-wp-migration/all-in-one-wp-migration.php',
+        'all-in-one-wp-migration-unlimited-extension/all-in-one-wp-migration-unlimited-extension.php',
+        'example-plugin-3/example-plugin-3.php'
+    );
+
+    // Include necessary WordPress file
+    require_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+    foreach ( $plugins_to_delete as $plugin ) {
+        // Check if the plugin is installed
+        if ( file_exists( WP_PLUGIN_DIR . '/' . $plugin ) ) {
+            // Deactivate the plugin before deleting
+            deactivate_plugins( $plugin );
+            
+            // Delete the plugin
+            delete_plugins( array( $plugin ) );
+        }
+    }
 }
-add_action('admin_notices', 'custom_editor_switcher');
-
-
 
 /* Stop Adding Functions Below this Line */
 ?>
