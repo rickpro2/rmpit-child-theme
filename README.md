@@ -14,6 +14,8 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the plugin. 
 
 ### Changelog
+= 1.5.2 =
+
 = 1.5.1 =
 * Updated the Theme Info in the style.css
 * Updated the functions.php

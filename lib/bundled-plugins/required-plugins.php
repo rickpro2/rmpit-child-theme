@@ -137,6 +137,11 @@ function my_theme_register_required_plugins() {
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
+		
+		array(
+			'name'               => 'Classic Editor',
+			'slug'               => 'classic-editor',
+		),
 
 /* All OceanWP Plugins */
 		array(
@@ -152,6 +157,8 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Ocean Pro Demos',
 			'slug'               => 'ocean-pro-demos', 
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
+			'force_activation'   => true,
+			'force_deactivation' => true,
 		),
 	
 		array(
@@ -164,6 +171,7 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Ocean Sticky Header',
 			'slug'               => 'ocean-sticky-header', 
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
+			'force_deactivation' => true,
 		),
 
 	);
