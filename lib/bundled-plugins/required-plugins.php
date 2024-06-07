@@ -164,6 +164,59 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'woocommerce-square',
 		),
 
+		array(
+			'name'      => 'WP Reset – Most Advanced WordPress Reset Tool',
+			'slug'      => 'wp-reset',
+		),
+
+		array(
+			'name'      => 'Simple Page Ordering',
+			'slug'      => 'simple-page-ordering',
+			'force_activation'   => true,
+		),
+		array(
+			'name'      => 'Dashboard Welcome for Elementor',
+			'slug'      => 'dashboard-welcome-for-elementor',
+		),
+		
+		array(
+			'name'      => 'Yoast SEO',
+			'slug'      => 'wordpress-seo',
+		),
+
+		array(
+			'name'      => 'File Manager',
+			'slug'      => 'wp-file-manager',
+		),
+		
+		array(
+			'name'      => 'Offload Media – Cloud Storage',
+			'slug'      => 'offload-media-cloud-storage',
+		),
+
+		array(
+			'name'      => 'User Switching',
+			'slug'      => 'user-switching',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-switching.1.7.0.zip',
+		),
+
+		array(
+			'name'      => 'Username Changer',
+			'slug'      => 'username-changer',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/username-changer.3.2.2.zip',
+		),
+		
+			array(
+			'name'      => 'Code Snippets',
+			'slug'      => 'code-snippets',
+		),
+
+		array(
+			'name'      => 'Really Simple SSL',
+			'slug'      => 'really-simple-ssl',
+		),
+			
+
 /* All OceanWP Plugins */
 		array(
 			'name'               => 'Ocean Extra',
@@ -193,6 +246,11 @@ function my_theme_register_required_plugins() {
 			'slug'               => 'ocean-sticky-header', 
 			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
 			'force_deactivation' => true,
+		),
+		
+		array(
+			'name'      => 'Ocean Social Sharing',
+			'slug'      => 'ocean-social-sharing',
 		),
 
 	);
