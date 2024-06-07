@@ -142,6 +142,27 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Classic Editor',
 			'slug'               => 'classic-editor',
 		),
+				
+		array(
+			'name'               => 'Solid Security Pro',
+			'slug'               => 'ithemes-security-pro',
+			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ithemes-security-pro.zip',
+		),
+
+		array(
+			'name'      => 'iThemes Security',
+			'slug'      => 'better-wp-security',
+		),
+
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+		),
+		
+		array(
+			'name'      => 'WooCommerce Square',
+			'slug'      => 'woocommerce-square',
+		),
 
 /* All OceanWP Plugins */
 		array(
