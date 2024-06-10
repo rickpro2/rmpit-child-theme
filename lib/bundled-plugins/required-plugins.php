@@ -119,16 +119,7 @@ function my_theme_register_required_plugins() {
 			'required'           => true, 
 			'force_activation'   => true,
 		),
-		
-		array(
-			'name'               => 'User Role Editor',
-			'slug'               => 'user-role-editor', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', 
-			'required'           => true, 
-			'force_activation'   => true,
-			'force_deactivation' => true,
-		),
-		
+	
 		array(
 			'name'               => 'Editor Switcher',
 			'slug'               => 'editor-switcher', 

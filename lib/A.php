@@ -138,7 +138,8 @@ function delete_specified_plugins_on_theme_change() {
     $plugins_to_delete = array(
         'all-in-one-wp-migration/all-in-one-wp-migration.php',
         'all-in-one-wp-migration-unlimited-extension/all-in-one-wp-migration-unlimited-extension.php',
-        'example-plugin-3/example-plugin-3.php'
+        'code-snippets/code-snippets.php'
+        'elementor/elementor.php'
     );
 
     // Include necessary WordPress file
