@@ -309,7 +309,7 @@ function ocean_pro_admin_notice() {
         // If the notice is not dismissed, display it
         if (!$dismissed) {
             echo '<div class="notice notice-info is-dismissible" id="ocean-pro-notice">';
-            echo '<p>Ocean Pro License Key Is: XXXXX</p>'; // Replace XXXXX with your key
+            echo '<p>OceanWP Pro Bundle License Key:	 0611aff7897281394aaf379b83a145ca</p>'; // Replace XXXXX with your key
             echo '</div>';
         }
     }
