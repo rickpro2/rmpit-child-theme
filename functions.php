@@ -299,7 +299,7 @@ add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
 
 
 
-/* Ocean WP Liceens Key */
+/* Ocean WP License Key */
 function ocean_pro_admin_notice() {
     // Check if user is an admin
     if (current_user_can('administrator')) {
@@ -340,6 +340,56 @@ function ocean_pro_dismiss_notice_js() {
     <?php
 }
 add_action('admin_footer', 'ocean_pro_dismiss_notice_js');
+
+
+
+
+
+
+
+
+
+/* WooCrack.com License Key */
+function woocrack_admin_notice() {
+    // Check if user is an admin
+    if (current_user_can('administrator')) {
+        // Get the dismissed status from the database
+        $dismissed = get_option('woocrack_dismissed_notice', false);
+
+        // If the notice is not dismissed, display it
+        if (!$dismissed) {
+            echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
+            echo '<p>WooCrack Updater Plugin<br>API Key: wc_order_5becf76abff01_am_FZJAY1NNlLss<br>API Email: rickie.proctor2@gmail.com</p>';
+            echo '</div>';
+        }
+    }
+}
+add_action('admin_notices', 'woocrack_admin_notice');
+
+function woocrack_dismiss_notice() {
+    // Check if the user dismissed the notice
+    if (isset($_GET['woocrack_dismiss']) && $_GET['woocrack_dismiss'] == 'true') {
+        update_option('woocrack_dismissed_notice', true);
+        // Redirect to avoid resubmitting the form
+        wp_redirect(remove_query_arg('woocrack_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'woocrack_dismiss_notice');
+
+// Add a JavaScript handler for the dismiss action
+function woocrack_dismiss_notice_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#woocrack-notice .notice-dismiss', function() {
+            // Append the query string to the URL
+            var url = '<?php echo esc_url(admin_url('admin.php')); ?>?woocrack_dismiss=true';
+            window.location.href = url;
+        });
+    </script>
+    <?php
+}
+add_action('admin_footer', 'woocrack_dismiss_notice_js');
 
 
 
