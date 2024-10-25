@@ -309,7 +309,7 @@ function ocean_pro_admin_notice() {
         // If the notice is not dismissed, display it
         if (!$dismissed) {
             echo '<div class="notice notice-info is-dismissible" id="ocean-pro-notice">';
-            echo '<p>OceanWP Pro Bundle License Key:	 0611aff7897281394aaf379b83a145ca</p>'; // Replace XXXXX with your key
+            echo '<p><strong>OceanWP Pro Bundled License Key</strong><br /><span style="text-decoration: underline;">License Key:</span> 0611aff7897281394aaf379b83a145ca</p>'; // Replace XXXXX with your key
             echo '</div>';
         }
     }
@@ -359,7 +359,7 @@ function woocrack_admin_notice() {
         // If the notice is not dismissed, display it
         if (!$dismissed) {
             echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
-            echo '<p>WooCrack Updater Plugin<br>API Key: wc_order_5becf76abff01_am_FZJAY1NNlLss<br>API Email: rickie.proctor2@gmail.com</p>';
+            echo '<p><strong>WooCrack Updater Plugin License Key</strong><br /><span style="text-decoration: underline;">API Key:</span> wc_order_5becf76abff01_am_FZJAY1NNlLss<br /><span style="text-decoration: underline;"><em>API Email:</em></span> rickie.proctor2@gmail.com</p>';
             echo '</div>';
         }
     }
