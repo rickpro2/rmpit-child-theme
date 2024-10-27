@@ -14,7 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the plugin. 
 
 ### Changelog
-= 1.5.2 =
+= 1.5.3 =
+* Updated the Remove plugins list
+* Removed extra auto install plugin
+* Added Admin Notices for OceanWP, WooCrack, Footer
+
 
 = 1.5.1 =
 * Updated the Theme Info in the style.css

