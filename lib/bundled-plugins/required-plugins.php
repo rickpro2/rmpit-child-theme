@@ -207,6 +207,10 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'really-simple-ssl',
 		),
 			
+		array(
+			'name'      => 'Advanced Database Cleaner',
+			'slug'      => 'advanced-database-cleaner',
+		),
 
 /* All OceanWP Plugins */
 		array(
