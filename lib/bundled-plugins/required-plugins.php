@@ -243,7 +243,11 @@ function my_theme_register_required_plugins() {
 			'name'      => 'Ocean Social Sharing',
 			'slug'      => 'ocean-social-sharing',
 		),
-
+		
+		array(
+			'name'      => 'Ocean Modal Window',
+			'slug'      => 'ocean-modal-window',
+		),
 	);
 
 	/*
