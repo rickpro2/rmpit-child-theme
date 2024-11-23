@@ -1,3 +1,4 @@
+<?php
 // Function to initialize default checklist items
 function rmpit_initialize_checklist_items() {
     $default_items = [
