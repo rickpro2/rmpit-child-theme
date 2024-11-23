@@ -1,17 +1,3 @@
-<?php
-/**
- * Plugin Name: RMPIT Checklist Widget
- * Plugin URI: https://yourwebsite.com
- * Description: A dashboard widget that provides a checklist for website development tasks, visible only to administrators.
- * Version: 1.1
- * Author: Rickie M. Proctor II
- * Author URI: https://yourwebsite.com
- * License: GPL2
- */
-
-// Exit if accessed directly
-if (!defined('ABSPATH')) exit;
-
 // Function to initialize default checklist items
 function rmpit_initialize_checklist_items() {
     $default_items = [
@@ -24,12 +10,11 @@ function rmpit_initialize_checklist_items() {
         update_option('rmpit_checklist_items', $default_items);
     }
 }
-register_activation_hook(__FILE__, 'rmpit_initialize_checklist_items');
+add_action('after_setup_theme', 'rmpit_initialize_checklist_items');
 
-// Add the dashboard widget
+// Add the dashboard widget for admins
 function rmpit_add_checklist_widget() {
-    // Only add the widget for administrators
-    if (current_user_can('manage_options')) {
+    if (current_user_can('manage_options')) { // Only for admins
         wp_add_dashboard_widget(
             'rmpit_checklist_widget', // Widget ID
             'Website Development Checklist', // Widget Title
@@ -46,7 +31,6 @@ function rmpit_display_checklist_widget() {
 
     // Handle form submission
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['rmpit_checklist'])) {
-        // Sanitize and save the checklist items
         $checklist_items = array_map(function($item) {
             return [
                 'task' => sanitize_text_field($item['task']),
@@ -87,10 +71,10 @@ function rmpit_display_checklist_widget() {
     echo '</form>';
 }
 
-// Enqueue admin scripts and styles
-function rmpit_checklist_widget_scripts($hook) {
-    if ('index.php' !== $hook || !current_user_can('manage_options')) return; // Only load for admin users on the dashboard
-    wp_enqueue_script('rmpit-checklist-script', plugin_dir_url(__FILE__) . 'rmpit-checklist.js', ['jquery'], null, true);
-    wp_enqueue_style('rmpit-checklist-style', plugin_dir_url(__FILE__) . 'rmpit-checklist.css');
+// Enqueue scripts and styles for the dashboard widget
+function rmpit_checklist_widget_assets($hook) {
+    if ('index.php' !== $hook || !current_user_can('manage_options')) return;
+    wp_enqueue_script('rmpit-checklist-script', get_stylesheet_directory_uri() . '/rmpit-checklist.js', ['jquery'], null, true);
+    wp_enqueue_style('rmpit-checklist-style', get_stylesheet_directory_uri() . '/rmpit-checklist.css');
 }
-add_action('admin_enqueue_scripts', 'rmpit_checklist_widget_scripts');
+add_action('admin_enqueue_scripts', 'rmpit_checklist_widget_assets');

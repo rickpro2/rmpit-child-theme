@@ -13,4 +13,26 @@ Requires PHP: 7.0
 
 */
 
+
+
+
+#rmpit-checklist-form ul {
+    margin: 0;
+    padding: 0;
+}
+
+#rmpit-checklist-form li {
+    margin-bottom: 10px;
+}
+
+#rmpit-checklist-form input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#rmpit-checklist-form button {
+    font-size: 14px;
+}
+
+
 /* Parent stylesheet should be loaded from functions.php not using @import */
