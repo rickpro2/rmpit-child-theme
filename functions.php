@@ -247,7 +247,7 @@ function revealid_pages_id_column_content( $column, $id ) {
 
 /* Require Lib Folder & Files */
 require( get_stylesheet_directory() . '/lib/A.php' );
-
+require( get_stylesheet_directory() . '/lib/AdminOnlyChecklistWidget.php' );
 
 
 
