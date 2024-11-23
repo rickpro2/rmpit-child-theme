@@ -6,14 +6,13 @@ function rmpit_initialize_checklist_items() {
         ['task' => 'Install Pro Demo', 'completed' => false],
         ['task' => 'Delete Website Checklist Plugin', 'completed' => false]
     ];
-    // Only set the default items if the option doesn't already exist
     if (false === get_option('rmpit_checklist_items')) {
         update_option('rmpit_checklist_items', $default_items);
     }
 }
 add_action('after_setup_theme', 'rmpit_initialize_checklist_items');
 
-// Add the dashboard widget for admins
+// Add the dashboard widget
 function rmpit_add_checklist_widget() {
     if (current_user_can('manage_options')) { // Only for admins
         wp_add_dashboard_widget(
@@ -21,16 +20,21 @@ function rmpit_add_checklist_widget() {
             'Website Development Checklist', // Widget Title
             'rmpit_display_checklist_widget' // Callback to display content
         );
+
+        // Reposition the widget to the top
+        global $wp_meta_boxes;
+
+        $widget = $wp_meta_boxes['dashboard']['normal']['core']['rmpit_checklist_widget'];
+        unset($wp_meta_boxes['dashboard']['normal']['core']['rmpit_checklist_widget']);
+        $wp_meta_boxes['dashboard']['side']['high']['rmpit_checklist_widget'] = $widget;
     }
 }
 add_action('wp_dashboard_setup', 'rmpit_add_checklist_widget');
 
 // Display the checklist widget
 function rmpit_display_checklist_widget() {
-    // Get saved checklist items
     $checklist_items = get_option('rmpit_checklist_items', []);
 
-    // Handle form submission
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['rmpit_checklist'])) {
         $checklist_items = array_map(function($item) {
             return [
@@ -41,14 +45,12 @@ function rmpit_display_checklist_widget() {
         update_option('rmpit_checklist_items', $checklist_items);
     }
 
-    // Add a new task if provided
     if (!empty($_POST['rmpit_new_task'])) {
         $new_task = sanitize_text_field($_POST['rmpit_new_task']);
         $checklist_items[] = ['task' => $new_task, 'completed' => false];
         update_option('rmpit_checklist_items', $checklist_items);
     }
 
-    // Display the form
     echo '<form method="post" id="rmpit-checklist-form">';
     echo '<ul style="list-style-type: none; padding: 0;">';
     foreach ($checklist_items as $index => $item) {
