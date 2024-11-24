@@ -15,9 +15,13 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
-= 0.0 =
+= 0.2 =
+* Installed Required Lib Folder & Files
+* WooCrack.com License Key
+* Ocean WP License Key
+* Add URL Column To WordPress Media Library
+
+= 0.1 =
 * Installed Required plugins List
 * Created Admin/Webmaster User Role
 * Display Page IDs
-* 
-
