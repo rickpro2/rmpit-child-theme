@@ -87,12 +87,6 @@ require( get_stylesheet_directory() . '/lib/rmpit-checklist.php' );
 
 
 
-/* Required plugins */
-require_once get_stylesheet_directory() . '/lib/bundled-plugins/required-plugins.php';
-
-
-
-
 
 /* Display Post IDs */
 add_filter( 'manage_posts_columns', 'revealid_add_post_id_column', 5 );
