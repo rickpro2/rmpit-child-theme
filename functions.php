@@ -60,29 +60,8 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
-/* Require Lib Folder & Files */
-require( get_stylesheet_directory() . '/lib/A.php' );
-require( get_stylesheet_directory() . '/lib/rmpit-checklist.php' );
 
 
-
-
-
-/* Display Post IDs */
-add_filter( 'manage_posts_columns', 'revealid_add_post_id_column', 5 );
-add_action( 'manage_posts_custom_column', 'revealid_post_id_column_content', 5, 2 );
-
-
-function revealid_add_post_id_column( $columns ) {
-   $columns['revealid_id'] = 'ID';
-   return $columns;
-}
-
-function revealid_post_id_column_content( $column, $id ) {
-  if( 'revealid_id' == $column ) {
-    echo $id;
-  }
-}
 
 
 
