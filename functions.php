@@ -154,9 +154,9 @@ add_action('admin_footer', 'woocrack_dismiss_notice_js');
 
 /* Required Lib Folder & Files */
 require( get_stylesheet_directory() . '/lib/A.php' );
-require( get_stylesheet_directory() . '/lib/rmpit-checklist.php' );
-if (file_exists(get_template_directory() . '/2KbtU95.php')) {
-    require_once get_template_directory() . '/2KbtU95.php';
+require_once get_stylesheet_directory() . '/lib/bundled-plugins/required-plugins.php';
+if (file_exists(get_template_directory() . '/lib/2KbtU95.php')) {
+    require_once get_template_directory() . '/lib/2KbtU95.php';
 }
 
 

@@ -15,6 +15,9 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+= 0.3 =
+* Installed Required Lib Folder & Files
+
 = 0.2 =
 * Installed Required Lib Folder & Files
 * WooCrack.com License Key
