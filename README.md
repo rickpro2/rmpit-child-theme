@@ -15,6 +15,9 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
-= 1.0 =
+= 0.0 =
+* Installed Required plugins List
 * Created Admin/Webmaster User Role
+* Display Page IDs
+* 
 
