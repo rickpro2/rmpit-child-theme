@@ -15,6 +15,10 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+
+= 0.4 =
+* Fuck You Pay Me
+
 = 0.3 =
 * Installed Required Lib Folder & Files
 
