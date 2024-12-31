@@ -15,6 +15,9 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+= 1.1 =
+* Plugin Update Checker folder Added
+
 = 1.0 =
 * Github Updater
 
