@@ -15,6 +15,12 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+= 1.3 =
+Add URL Column To WordPress Media Library
+
+= 1.2 =
+* Create Admin/Webmaster User Role
+
 = 1.1 =
 * Plugin Update Checker folder Added
 
