@@ -14,6 +14,15 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+
+= 1.4.7 =
+* bundled-plugins folder added:
+	- ocean-sticky-footer.2.0.6
+	- ocean-sticky-header.2.1.2
+	- ocean-white-label.2.0.4
+	- ocean-woo-popup.2.0.8
+	- username-changer.3.2.2
+
 = 1.4.6 =
 * bundled-plugins folder added:
 	- ocean-instagram.1.2.3
