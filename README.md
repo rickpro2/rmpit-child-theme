@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.4.4 =
+* bundled-plugins folder added:
+	- ocean-cookie-notice.2.0.7
+	- ocean-elementor-widgets.2.4.4
+	- ocean-extra.2.2.1
+
 = 1.4.3 =
 * bundled-plugins folder added:
 	- automatewoo
