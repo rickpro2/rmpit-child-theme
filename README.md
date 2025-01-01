@@ -15,6 +15,12 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+= 1.4.1 =
+bundled-plugins folder, removed plugins folder
+
+= 1.4 =
+bundled-plugins folder Added
+
 = 1.3 =
 Add URL Column To WordPress Media Library
 

@@ -45,6 +45,13 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
+/* Required plugins */
+require_once get_stylesheet_directory() . '/bundled-plugins/required-plugins.php';
+
+
+
+
+
 /* Add URL Column To WordPress Media Library */
 function muc_column( $cols ) {
 	$cols["media_url"] = "URL";
