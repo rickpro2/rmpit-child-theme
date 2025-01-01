@@ -18,16 +18,16 @@ Simply deactivate and delete the Theme.
 = 1.4.2 =
 bundled-plugins folder added:
 * * all-in-one-wp-migration-unlimited-extension
-* * all-in-one-wp-migration
+** all-in-one-wp-migration
 
 = 1.4.1 =
-bundled-plugins folder, removed plugins folder
+* bundled-plugins folder, removed plugins folder
 
 = 1.4 =
-bundled-plugins folder Added
+* bundled-plugins folder Added
 
 = 1.3 =
-Add URL Column To WordPress Media Library
+* Add URL Column To WordPress Media Library
 
 = 1.2 =
 * Create Admin/Webmaster User Role
