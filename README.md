@@ -16,9 +16,9 @@ Simply deactivate and delete the Theme.
 ### Changelog
 
 = 1.4.2 =
-bundled-plugins folder added:
- *   all-in-one-wp-migration-unlimited-extension
-#### all-in-one-wp-migration
+* bundled-plugins folder added:
+* * all-in-one-wp-migration-unlimited-extension
+** all-in-one-wp-migration
 
 = 1.4.1 =
 * bundled-plugins folder, removed plugins folder
