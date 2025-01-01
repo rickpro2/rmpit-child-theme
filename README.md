@@ -14,6 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.4.3 =
+* bundled-plugins folder added:
+	- automatewoo
+	- editor-switcher
+	- ithemes-security-pro
 
 = 1.4.2 =
 * bundled-plugins folder added:
