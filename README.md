@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.4.8 =
+* bundled-plugins folder added:
+	- user-role-editor.4.64.1
+	- user-switching.1.7.0
+	- woocommerce-square
+	- woocrack-updater-plugin-2.0
 
 = 1.4.7 =
 * bundled-plugins folder added:
