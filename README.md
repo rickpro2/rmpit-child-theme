@@ -15,11 +15,12 @@ Simply deactivate and delete the Theme.
 
 ### Changelog
 
+= 1.5 =
+* Display Page IDs
+
 = 1.4.9 =
 * bundled-plugins folder:
 	- Removed the /lib/ folder
-
-
 
 = 1.4.8 =
 * bundled-plugins folder added:

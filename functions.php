@@ -45,6 +45,26 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
+/* Display Page IDs */
+add_filter( 'manage_pages_columns', 'revealid_add_pages_id_column', 5 );
+add_action( 'manage_pages_custom_column', 'revealid_pages_id_column_content', 5, 2 );
+
+
+function revealid_add_pages_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_pages_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
+
+
+
+
+
 /* Required plugins */
 require_once get_stylesheet_directory() . '/bundled-plugins/required-plugins.php';
 
