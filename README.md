@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.6 =
+* Ocean WP License Key
+* WooCrack.com License Key
 
 = 1.5 =
 * Display Page IDs
