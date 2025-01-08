@@ -45,6 +45,28 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
+/* Customised the Admin Dashboard Footer */
+/**
+ * to make something blank. use the:           __return_empty_string
+ */
+// Remove left admin footer text
+add_filter( 'admin_footer_text', 'CevE8X_left_footer_admin' );
+
+// Remove left admin footer text
+add_filter( 'update_footer', 'e9EJvG_right_footer_admin', 11 );
+
+function CevE8X_left_footer_admin () {
+	echo 'Theme designed and developed by <a href="http://www.rmpit.com" target="_blank">RMPIT</a> and powered by <a href="http://wordpress.org" target="_blank">WordPress</a>.';
+}
+
+function e9EJvG_right_footer_admin () {
+	echo '<a href="https://biblehub.com/proverbs/17-22.htm" target="_blank">God Bless You, and Have fun!</a>.';
+}
+
+
+
+
+
 /* Ocean WP License Key */
 function ocean_pro_admin_notice() {
     // Check if user is an admin

@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.6.2 =
+*Customised the Admin Dashboard Footer
+
+= 1.6.1 =
+*Screenshot Added
+
 = 1.6 =
 * Ocean WP License Key
 * WooCrack.com License Key
