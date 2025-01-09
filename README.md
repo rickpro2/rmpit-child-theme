@@ -14,11 +14,15 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+
+= 1.6.3 =
+* Obscure login screen error message
+
 = 1.6.2 =
-*Customised the Admin Dashboard Footer
+* Customised the Admin Dashboard Footer
 
 = 1.6.1 =
-*Screenshot Added
+* Screenshot Added
 
 = 1.6 =
 * Ocean WP License Key

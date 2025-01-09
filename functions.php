@@ -45,6 +45,14 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
+/* Obscure login screen error message */
+function wpfme_login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somewhere!';}
+add_filter( 'login_errors', 'wpfme_login_obscure' );
+
+
+
+
+
 /* Customised the Admin Dashboard Footer */
 /**
  * to make something blank. use the:           __return_empty_string
