@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.7 =
+* bundled-plugins folder added:
+	- Kadence WooCommerce Email Designer
 
 = 1.6.3 =
 * Obscure login screen error message

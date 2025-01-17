@@ -45,7 +45,7 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 
-/* Obscure login screen error message */
+/* Obscure Login Screen Error Message */
 function wpfme_login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somewhere!';}
 add_filter( 'login_errors', 'wpfme_login_obscure' );
 

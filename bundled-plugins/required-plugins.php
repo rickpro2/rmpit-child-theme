@@ -211,6 +211,11 @@ function my_theme_register_required_plugins() {
 			'name'      => 'Advanced Database Cleaner',
 			'slug'      => 'advanced-database-cleaner',
 		),
+	
+		array(
+			'name'      => 'Kadence WooCommerce Email Designer',
+			'slug'      => 'kadence-woocommerce-email-designer',
+		),
 
 /* All OceanWP Plugins */
 		array(
