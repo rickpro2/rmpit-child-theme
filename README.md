@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.0 =
+* Fuck You Pay Me
+
 = 1.7 =
 * bundled-plugins folder added:
 	- Kadence WooCommerce Email Designer

