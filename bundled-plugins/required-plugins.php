@@ -217,6 +217,13 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'kadence-woocommerce-email-designer',
 		),
 
+		array(
+			'name'               => 'Shipment Tracking for WooCommerce',
+			'slug'               => 'shipmentTracking',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
+		),		
+
+
 /* All OceanWP Plugins */
 		array(
 			'name'               => 'Ocean Extra',

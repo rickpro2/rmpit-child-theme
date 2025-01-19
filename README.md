@@ -14,8 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.1 =
+* bundled-plugins folder added:
+	- woocommerce-shipment-tracking
+
 = 2.0 =
-* Fuck You Pay Me
+* Fuck You, Pay Me
 
 = 1.7 =
 * bundled-plugins folder added:
