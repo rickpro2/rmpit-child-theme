@@ -78,7 +78,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'WooCrack Updater',
 			'slug'               => 'woocrack',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
 		),		
 
 		array(
@@ -91,7 +91,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'All-in-One WP Migration',
 			'slug'               => 'all-in-one-wp-migration',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration.zip',
 			'required'           => true,
 			'force_activation'   => true,
 		),
@@ -99,7 +99,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'All-in-One WP Migration Unlimited Extension',
 			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
 			'required'           => true, 
 			'force_activation'   => true, 
 		),
@@ -107,7 +107,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'User Role Editor',
 			'slug'               => 'user-role-editor', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-role-editor.4.64.1.zip', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-role-editor.4.64.1.zip', 
 			'required'           => true, 
 			'force_activation'   => true,
 			'force_deactivation' => true,
@@ -123,7 +123,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Editor Switcher',
 			'slug'               => 'editor-switcher', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/editor-switcher.zip', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/editor-switcher.zip', 
 			'required'           => true, 
 			'force_activation'   => true,
 			'force_deactivation' => true,
@@ -137,7 +137,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Solid Security Pro',
 			'slug'               => 'ithemes-security-pro',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ithemes-security-pro.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ithemes-security-pro.zip',
 		),
 
 		array(
@@ -188,13 +188,13 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'      => 'User Switching',
 			'slug'      => 'user-switching',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/user-switching.1.7.0.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-switching.1.7.0.zip',
 		),
 
 		array(
 			'name'      => 'Username Changer',
 			'slug'      => 'username-changer',
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/username-changer.3.2.2.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/username-changer.3.2.2.zip',
 		),
 		
 			array(
@@ -207,12 +207,39 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'really-simple-ssl',
 		),
 			
+		array(
+			'name'      => 'Advanced Database Cleaner',
+			'slug'      => 'advanced-database-cleaner',
+		),
+	
+		array(
+			'name'      => 'Kadence WooCommerce Email Designer',
+			'slug'      => 'kadence-woocommerce-email-designer',
+		),
 
+		array(
+			'name'               => 'Shipment Tracking for WooCommerce',
+			'slug'               => 'shipmentTracking',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
+		),		
+
+		array(
+			'name'               => 'AnyWhere Elementor Pro (Premium)',
+			'slug'               => 'anywhere-elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+		),	
+
+		array(
+			'name'               => 'Extras for Elementor',
+			'slug'               => 'extras-elementor',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-extras.zip',
+		),
+		
 /* All OceanWP Plugins */
 		array(
 			'name'               => 'Ocean Extra',
 			'slug'               => 'ocean-extra', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-extra.2.2.1.zip', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-extra.2.2.1.zip', 
 			'required'           => true, 
 			'force_activation'   => true,
 			'force_deactivation' => true,
@@ -221,7 +248,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Ocean Pro Demos',
 			'slug'               => 'ocean-pro-demos', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
@@ -229,13 +256,13 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Ocean Elementor Widgets',
 			'slug'               => 'ocean-elementor-widgets', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-elementor-widgets.2.4.4.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-elementor-widgets.2.4.4.zip',
 		),
 			
 		array(
 			'name'               => 'Ocean Sticky Header',
 			'slug'               => 'ocean-sticky-header', 
-			'source'             => get_stylesheet_directory() . '/lib/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
 			'force_deactivation' => true,
 		),
 		
@@ -248,6 +275,7 @@ function my_theme_register_required_plugins() {
 			'name'      => 'Ocean Modal Window',
 			'slug'      => 'ocean-modal-window',
 		),
+
 	);
 
 	/*
