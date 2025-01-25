@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.2 =
+* Display Post IDs
+
 = 2.1 =
 * bundled-plugins folder added:
 	- woocommerce-shipment-tracking
