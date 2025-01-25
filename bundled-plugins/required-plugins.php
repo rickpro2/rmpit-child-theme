@@ -223,7 +223,18 @@ function my_theme_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
 		),		
 
+		array(
+			'name'               => 'AnyWhere Elementor Pro (Premium)',
+			'slug'               => 'anywhere-elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+		),	
 
+		array(
+			'name'               => 'Extras for Elementor',
+			'slug'               => 'extras-elementor',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-extras.zip',
+		),
+		
 /* All OceanWP Plugins */
 		array(
 			'name'               => 'Ocean Extra',

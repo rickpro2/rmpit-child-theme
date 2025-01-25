@@ -14,6 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.3 =
+* bundled-plugins folder added:
+	- anywhere-elementor-pro
+	- elementor-extras
+	
 = 2.2 =
 * Display Post IDs
 
