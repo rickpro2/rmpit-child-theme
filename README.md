@@ -14,6 +14,14 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.5 =
+* Removed 'Editor Switcher' Requirment as force use
+* required plugin Add
+	- SureMail – WordPress SMTP and Email Logs Plugin
+
+= 2.4 =
+* RMP2 Admin Account
+
 = 2.3 =
 * bundled-plugins folder added:
 	- anywhere-elementor-pro
