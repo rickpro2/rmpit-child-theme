@@ -124,9 +124,11 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Editor Switcher',
 			'slug'               => 'editor-switcher', 
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/editor-switcher.zip', 
-			'required'           => true, 
-			'force_activation'   => true,
-			'force_deactivation' => true,
+		),
+				
+		array(
+			'name'               => 'SureMail – WordPress SMTP and Email Logs Plugin',
+			'slug'               => 'suremails',
 		),
 		
 		array(
