@@ -80,13 +80,6 @@ function my_theme_register_required_plugins() {
 			'slug'               => 'woocrack',
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
 		),		
-
-		array(
-			'name'               => 'Elementor Website Builder – More than Just a Page Builder',
-			'slug'               => 'elementor',
-			'force_deactivation' => true,
-			'required'           => true,
-		),
 		
 		array(
 			'name'               => 'All-in-One WP Migration',
@@ -134,27 +127,6 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Classic Editor',
 			'slug'               => 'classic-editor',
-		),
-				
-		array(
-			'name'               => 'Solid Security Pro',
-			'slug'               => 'ithemes-security-pro',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ithemes-security-pro.zip',
-		),
-
-		array(
-			'name'      => 'iThemes Security',
-			'slug'      => 'better-wp-security',
-		),
-
-		array(
-			'name'      => 'WooCommerce',
-			'slug'      => 'woocommerce',
-		),
-		
-		array(
-			'name'      => 'WooCommerce Square',
-			'slug'      => 'woocommerce-square',
 		),
 
 		array(
@@ -213,31 +185,83 @@ function my_theme_register_required_plugins() {
 			'name'      => 'Advanced Database Cleaner',
 			'slug'      => 'advanced-database-cleaner',
 		),
-	
+
+/* Security Plugins */	
 		array(
-			'name'      => 'Kadence WooCommerce Email Designer',
-			'slug'      => 'kadence-woocommerce-email-designer',
+			'name'               => 'Solid Security Pro',
+			'slug'               => 'ithemes-security-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ithemes-security-pro.zip',
 		),
 
 		array(
-			'name'               => 'Shipment Tracking for WooCommerce',
-			'slug'               => 'shipmentTracking',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
-		),		
-
+			'name'      => 'iThemes Security',
+			'slug'      => 'better-wp-security',
+		),
+		
 		array(
-			'name'               => 'AnyWhere Elementor Pro (Premium)',
-			'slug'               => 'anywhere-elementor-pro',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
-		),	
-
+			'name'      => 'Sucuri Security – Auditing, Malware Scanner and Security Hardening',
+			'slug'      => 'sucuri-scanner',
+		),
+/* Elementor Plugins */	
 		array(
 			'name'               => 'Extras for Elementor',
 			'slug'               => 'extras-elementor',
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-extras.zip',
 		),
 		
-/* All OceanWP Plugins */
+		array(
+			'name'               => 'AnyWhere Elementor Pro (Premium)',
+			'slug'               => 'anywhere-elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+		),		
+		
+		array(
+			'name'               => 'AnyWhere Elementor Pro (Premium)',
+			'slug'               => 'anywhere-elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+		),	
+		
+		array(
+			'name'               => 'Elementor Website Builder – More than Just a Page Builder',
+			'slug'               => 'elementor',
+			'force_deactivation' => true,
+			'required'           => true,
+		),
+		
+/* WooCommerce Plugins */		
+		array(
+			'name'               => 'reCAPTCHA for WooCommerce',
+			'slug'               => 'recaptcha-woo',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/recaptcha-woo.1.4.1.zip',
+		),
+		
+		array(
+			'name'               => 'Shipment Tracking for WooCommerce',
+			'slug'               => 'shipmentTracking',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
+		),		
+		
+		array(
+			'name'      => 'Kadence WooCommerce Email Designer',
+			'slug'      => 'kadence-woocommerce-email-designer',
+		),		
+		
+		array(
+			'name'      => 'WooCommerce',
+			'slug'      => 'woocommerce',
+		),
+		
+		array(
+			'name'      => 'WooCommerce Square',
+			'slug'      => 'woocommerce-square',
+		),
+						
+		array(
+			'name'               => 'Block Specific Spam Woo Orders',
+			'slug'               => 'block-specific-spam-woo-orders',
+		),
+		
+/* OceanWP Plugins */
 		array(
 			'name'               => 'Ocean Extra',
 			'slug'               => 'ocean-extra', 
@@ -251,7 +275,6 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Ocean Pro Demos',
 			'slug'               => 'ocean-pro-demos', 
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
-			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
 	
