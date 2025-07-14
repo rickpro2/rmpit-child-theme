@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.6 =
+* Updated Plugin Update Checker
+
 = 2.5 =
 * Removed 'Editor Switcher' Requirment as force use
 * required plugin Add
