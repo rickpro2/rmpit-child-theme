@@ -260,6 +260,12 @@ function my_theme_register_required_plugins() {
 			'name'               => 'Block Specific Spam Woo Orders',
 			'slug'               => 'block-specific-spam-woo-orders',
 		),
+	
+		array(
+			'name'               => 'WooCommerce Give Products 1.2.1',
+			'slug'               => 'woocommerce-give-products',
+			'source'             => 'https://woocrack.com/dl?key=4663305746355',
+		),
 		
 /* OceanWP Plugins */
 		array(

@@ -14,6 +14,10 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.7 =
+* bundled-plugins folder added:
+	- WooCommerce Give Products 1.2.1
+
 = 2.6 =
 * Updated Plugin Update Checker
 
