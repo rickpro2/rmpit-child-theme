@@ -122,7 +122,7 @@ add_action('admin_footer', 'ocean_pro_dismiss_notice_js');
 
 
 /* WooCrack.com License Key */
-function woocrack_admin_notice() {
+/*function woocrack_admin_notice() {
     // Check if user is an admin
     if (current_user_can('administrator')) {
         // Get the dismissed status from the database
@@ -162,6 +162,61 @@ function woocrack_dismiss_notice_js() {
     <?php
 }
 add_action('admin_footer', 'woocrack_dismiss_notice_js');
+*/
+
+// Display admin notice for WooCrack Updater Plugin License Key
+function woocrack_license_admin_notice() {
+    // Check if user is an admin
+    if (current_user_can('administrator')) {
+        // Get dismissed timestamp
+        $dismissed_time = get_option('woocrack_dismissed_notice_time', 0);
+        $current_time   = current_time('timestamp');
+
+        // Check if 15 days have passed since dismissal
+        $fifteen_days   = 15 * DAY_IN_SECONDS;
+        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
+
+        // Show notice if never dismissed or expired
+        if ($dismissed_time == 0 || $expired) {
+            echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
+            echo '<p><strong>WooCrack Updater Plugin License Key</strong><br />';
+            echo '<span style="text-decoration: underline;">API Key:</span> <code>wc_order_5becf76abff01_am_FZJAY1NNlLss</code><br />';
+            echo '<span style="text-decoration: underline;"><em>API Email:</em></span> <code>rickie.proctor2@gmail.com</code></p>';
+            echo '</div>';
+        }
+    }
+}
+add_action('admin_notices', 'woocrack_license_admin_notice');
+
+// Handle dismiss action
+function woocrack_dismiss_notice() {
+    if (isset($_GET['woocrack_dismiss']) && $_GET['woocrack_dismiss'] == 'true') {
+        // Record dismissal time
+        update_option('woocrack_dismissed_notice_time', current_time('timestamp'));
+        // Redirect to clean URL
+        wp_redirect(remove_query_arg('woocrack_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'woocrack_dismiss_notice');
+
+// Add JavaScript for dismiss functionality
+function woocrack_dismiss_notice_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#woocrack-notice .notice-dismiss', function() {
+            var url = '<?php echo esc_url(admin_url('admin.php?woocrack_dismiss=true')); ?>';
+            window.location.href = url;
+        });
+    </script>
+    <?php
+}
+add_action('admin_footer', 'woocrack_dismiss_notice_js');
+
+
+
+
+
 
 
 
