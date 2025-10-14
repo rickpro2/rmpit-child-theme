@@ -167,6 +167,58 @@ add_action('admin_footer', 'woocrack_dismiss_notice_js');
 
 
 
+/* All-in-One WP Migration Unlimited Extension License Key */
+function aiowpm_unlimited_admin_notice() {
+    // Check if user is an admin
+    if (current_user_can('administrator')) {
+        // Get dismissed timestamp
+        $dismissed_time = get_option('aiowpm_unlimited_dismissed_notice_time', 0);
+        $current_time   = current_time('timestamp');
+
+        // Check if 15 days have passed since dismissal
+        $fifteen_days   = 15 * DAY_IN_SECONDS;
+        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
+
+        // Show notice if never dismissed or expired
+        if ($dismissed_time == 0 || $expired) {
+            echo '<div class="notice notice-success is-dismissible" id="aiowpm-unlimited-notice">';
+            echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
+            echo '<span style="text-decoration: underline;">License Key:</span> <code>6c2c13a8b278a9b3411f932a96dd390a</code></p>';
+            echo '</div>';
+        }
+    }
+}
+add_action('admin_notices', 'aiowpm_unlimited_admin_notice');
+
+// Handle dismiss action
+function aiowpm_unlimited_dismiss_notice() {
+    if (isset($_GET['aiowpm_unlimited_dismiss']) && $_GET['aiowpm_unlimited_dismiss'] == 'true') {
+        // Record dismissal time
+        update_option('aiowpm_unlimited_dismissed_notice_time', current_time('timestamp'));
+        // Redirect to clean URL
+        wp_redirect(remove_query_arg('aiowpm_unlimited_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'aiowpm_unlimited_dismiss_notice');
+
+// Add JavaScript for dismiss functionality
+function aiowpm_unlimited_dismiss_notice_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#aiowpm-unlimited-notice .notice-dismiss', function() {
+            var url = '<?php echo esc_url(admin_url('admin.php?aiowpm_unlimited_dismiss=true')); ?>';
+            window.location.href = url;
+        });
+    </script>
+    <?php
+}
+add_action('admin_footer', 'aiowpm_unlimited_dismiss_notice_js');
+
+
+
+
+
 /* Fuck You Pay Me */
 add_action( 'wp_head', 'my_basie' );
 function my_basie() {

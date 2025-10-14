@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.8.1 =
+* All-in-One WP Migration Unlimited Extension License Key
+
 = 2.8 =
 * bundled-plugins folder added:
 	- Elementor Pro WordPress Plugin 3.0.4
