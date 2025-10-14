@@ -183,7 +183,8 @@ function aiowpm_unlimited_admin_notice() {
         if ($dismissed_time == 0 || $expired) {
             echo '<div class="notice notice-success is-dismissible" id="aiowpm-unlimited-notice">';
             echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
-            echo '<span style="text-decoration: underline;">License Key:</span> <code>6c2c13a8b278a9b3411f932a96dd390a</code></p>';
+            echo '<span style="text-decoration: underline;">License Key (1):</span> <code>8a27da53-8e94-445d-8d95-ef99a9b3c4a9</code></p>';
+	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>58824c89-8a2a-4ce7-940e-4bbd109672b4</code></p>';
             echo '</div>';
         }
     }
