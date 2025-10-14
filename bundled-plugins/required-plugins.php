@@ -216,9 +216,9 @@ function my_theme_register_required_plugins() {
 		),		
 		
 		array(
-			'name'               => 'AnyWhere Elementor Pro (Premium)',
-			'slug'               => 'anywhere-elementor-pro',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+			'name'               => 'Elementor Pro (Premium)',
+			'slug'               => 'elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-pro.zip',
 		),	
 		
 		array(
