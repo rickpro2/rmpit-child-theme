@@ -240,6 +240,7 @@ function aiowpm_unlimited_admin_notice() {
             echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
             echo '<span style="text-decoration: underline;">License Key (1):</span> <code>8a27da53-8e94-445d-8d95-ef99a9b3c4a9</code></p>';
 	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>58824c89-8a2a-4ce7-940e-4bbd109672b4</code></p>';
+	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>022c988d-cb98-4147-a8ec-35f05b37cec3</code></p>';
             echo '</div>';
         }
     }
