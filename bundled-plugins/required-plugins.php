@@ -85,16 +85,12 @@ function my_theme_register_required_plugins() {
 			'name'               => 'All-in-One WP Migration',
 			'slug'               => 'all-in-one-wp-migration',
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration.zip',
-			'required'           => true,
-			'force_activation'   => true,
 		),
 		
 		array(
 			'name'               => 'All-in-One WP Migration Unlimited Extension',
 			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
-			'required'           => true, 
-			'force_activation'   => true, 
 		),
 		
 		array(
@@ -410,3 +406,4 @@ function my_theme_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
+
