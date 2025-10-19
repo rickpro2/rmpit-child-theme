@@ -216,9 +216,9 @@ function my_theme_register_required_plugins() {
 		),		
 		
 		array(
-			'name'               => 'AnyWhere Elementor Pro (Premium)',
-			'slug'               => 'anywhere-elementor-pro',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/anywhere-elementor-pro.zip',
+			'name'               => 'Elementor Pro (Premium)',
+			'slug'               => 'elementor-pro',
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-pro.zip',
 		),	
 		
 		array(
@@ -259,6 +259,12 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Block Specific Spam Woo Orders',
 			'slug'               => 'block-specific-spam-woo-orders',
+		),
+	
+		array(
+			'name'               => 'WooCommerce Give Products 1.2.1',
+			'slug'               => 'woocommerce-give-products',
+			'source'             => 'https://woocrack.com/dl?key=4663305746355',
 		),
 		
 /* OceanWP Plugins */
