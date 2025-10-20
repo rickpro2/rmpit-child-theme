@@ -86,6 +86,7 @@ function ocean_pro_admin_notice() {
         if (!$dismissed) {
             echo '<div class="notice notice-info is-dismissible" id="ocean-pro-notice">';
             echo '<p><strong>OceanWP Pro Bundled License Key</strong><br /><span style="text-decoration: underline;">License Key:</span> 0611aff7897281394aaf379b83a145ca</p>'; // Replace XXXXX with your key
+			echo '<span style="text-decoration: underline;">License Key (4):</span> <code>0611aff7897281394aaf379b83a145ca</code></p>';
             echo '</div>';
         }
     }
@@ -121,49 +122,7 @@ add_action('admin_footer', 'ocean_pro_dismiss_notice_js');
 
 
 
-/* WooCrack.com License Key */
-/*function woocrack_admin_notice() {
-    // Check if user is an admin
-    if (current_user_can('administrator')) {
-        // Get the dismissed status from the database
-        $dismissed = get_option('woocrack_dismissed_notice', false);
-
-        // If the notice is not dismissed, display it
-        if (!$dismissed) {
-            echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
-            echo '<p><strong>WooCrack Updater Plugin License Key</strong><br /><span style="text-decoration: underline;">API Key:</span> wc_order_5becf76abff01_am_FZJAY1NNlLss<br /><span style="text-decoration: underline;"><em>API Email:</em></span> rickie.proctor2@gmail.com</p>';
-            echo '</div>';
-        }
-    }
-}
-add_action('admin_notices', 'woocrack_admin_notice');
-
-function woocrack_dismiss_notice() {
-    // Check if the user dismissed the notice
-    if (isset($_GET['woocrack_dismiss']) && $_GET['woocrack_dismiss'] == 'true') {
-        update_option('woocrack_dismissed_notice', true);
-        // Redirect to avoid resubmitting the form
-        wp_redirect(remove_query_arg('woocrack_dismiss'));
-        exit;
-    }
-}
-add_action('admin_init', 'woocrack_dismiss_notice');
-
-// Add a JavaScript handler for the dismiss action
-function woocrack_dismiss_notice_js() {
-    ?>
-    <script type="text/javascript">
-        jQuery(document).on('click', '#woocrack-notice .notice-dismiss', function() {
-            // Append the query string to the URL
-            var url = '<?php echo esc_url(admin_url('admin.php')); ?>?woocrack_dismiss=true';
-            window.location.href = url;
-        });
-    </script>
-    <?php
-}
-add_action('admin_footer', 'woocrack_dismiss_notice_js');
-*/
-
+/* WooCrack License Key */
 // Display admin notice for WooCrack Updater Plugin License Key
 function woocrack_license_admin_notice() {
     // Check if user is an admin
@@ -240,7 +199,8 @@ function aiowpm_unlimited_admin_notice() {
             echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
             echo '<span style="text-decoration: underline;">License Key (1):</span> <code>8a27da53-8e94-445d-8d95-ef99a9b3c4a9</code></p>';
 	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>58824c89-8a2a-4ce7-940e-4bbd109672b4</code></p>';
-	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>022c988d-cb98-4147-a8ec-35f05b37cec3</code></p>';
+	        echo '<span style="text-decoration: underline;">License Key (3):</span> <code>022c988d-cb98-4147-a8ec-35f05b37cec3</code></p>';
+			echo '<span style="text-decoration: underline;">License Key (4):</span> <code>23c065ec-616f-4b16-b628-ea8d29db53f0</code></p>';
             echo '</div>';
         }
     }
@@ -585,4 +545,5 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 $myUpdateChecker->setBranch('main');
 
 //Optional: If you're using a private repository, specify the access token like this:
+
 //$myUpdateChecker->setAuthentication('your-token-here');
