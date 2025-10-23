@@ -84,13 +84,13 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'All-in-One WP Migration',
 			'slug'               => 'all-in-one-wp-migration',
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration.zip',
+			'external_url'       => 'https://github.com/rickpro2/rmpit-child-theme/blob/Testing-to-see-defulat-plugins-download/plugins_x/all-in-one-wp-migration-unlimited-extension.zip',
 		),
 		
 		array(
 			'name'               => 'All-in-One WP Migration Unlimited Extension',
 			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip', 
+			'external_url'       => 'https://github.com/rickpro2/rmpit-child-theme/blob/Testing-to-see-defulat-plugins-download/plugins_x/all-in-one-wp-migration.zip', 
 		),
 		
 		array(
