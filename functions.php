@@ -542,7 +542,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 );
 
 //Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
+$myUpdateChecker->setBranch('Working-on-11625');
 
 //Optional: If you're using a private repository, specify the access token like this:
 
