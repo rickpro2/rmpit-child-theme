@@ -84,7 +84,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'Ithemes Securty Pro',
 			'slug'               => 'ithemessecerity',
-			'source'             => 'https://github.com/rickpro2/rickpro2-rmpit-child-theme-plugins/blob/main/need-inspection/ithemes-security-pro.zip',
+			'source'             => get_stylesheet_directory() . 'https://github.com/rickpro2/rickpro2-rmpit-child-theme-plugins/blob/main/need-inspection/ithemes-security-pro.zip',
 		),		
 		
 	);
