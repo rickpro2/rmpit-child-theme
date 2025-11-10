@@ -59,7 +59,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 );
 
 //Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('testing');
+$myUpdateChecker->setBranch('1st-install');
 
 //Optional: If you're using a private repository, specify the access token like this:
 
