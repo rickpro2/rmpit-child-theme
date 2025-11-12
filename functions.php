@@ -49,7 +49,7 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
 /* Github Updater */
-require 'plugin-update-checker/plugin-update-checker.php';
+require 'plugin-update-checker-master/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
