@@ -14,7 +14,10 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.1 =
+* Create Admin/Webmaster User Role
+
 = 1.0 =
 * Github Updater
+    - Plugin Update Checker folder Added
     - Updated to the "testing" branch
-
