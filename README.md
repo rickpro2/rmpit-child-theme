@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.2 =
+* Add URL Column To WordPress Media Library
+
 = 1.1 =
 * Create Admin/Webmaster User Role
 
