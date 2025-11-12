@@ -16,5 +16,5 @@ Simply deactivate and delete the Theme.
 ### Changelog
 = 1.0 =
 * Github Updater
-** Updated to the "testing" branch
+     Updated to the "testing" branch
 
