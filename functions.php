@@ -261,6 +261,46 @@ add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
 
 
 
+/* Display Page IDs */
+add_filter( 'manage_pages_columns', 'revealid_add_pages_id_column', 5 );
+add_action( 'manage_pages_custom_column', 'revealid_pages_id_column_content', 5, 2 );
+
+
+function revealid_add_pages_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_pages_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
+
+
+
+
+
+/* Display Post IDs */
+add_filter( 'manage_posts_columns', 'revealid_add_post_id_column', 5 );
+add_action( 'manage_posts_custom_column', 'revealid_post_id_column_content', 5, 2 );
+
+
+function revealid_add_post_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_post_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
+
+
+
+
+
 /* Stop Adding Functions Below this Line */
 
 

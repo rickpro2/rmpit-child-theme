@@ -14,6 +14,10 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.4 =
+* Display Page IDs
+* Display Post IDs
+
 = 1.3 =
 * Obscure Login Screen Error Message
 * Customised the Admin Dashboard Footer
