@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.5 =
+* Installed TGM-Plugin-Activation-2.6.1
+
 = 1.4 =
 * Display Page IDs
 * Display Post IDs
