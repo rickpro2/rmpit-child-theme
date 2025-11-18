@@ -14,7 +14,7 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
-= 1.9 =
+= 1.9.1 =
 * Required plugins
 * Changed Folder name
     -TGM-Plugin-Activation-2.6.1 --> bundled-plugins
