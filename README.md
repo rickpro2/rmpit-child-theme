@@ -14,10 +14,13 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.7 =
+* RMP2 Admin Account
+
 = 1.6.1 =
 * Ocean WP License Key
     -Update Key information
-    
+
 = 1.6 =
 * WooCrack License Key
 * All-in-One WP Migration Unlimited Extension License Key
