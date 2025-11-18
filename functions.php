@@ -486,6 +486,12 @@ function my_basie() {
 
 
 
+/* Required plugins */
+require_once get_stylesheet_directory() . '/bundled-plugins/required-plugins.php';
+
+
+
+
 /* Stop Adding Functions Below this Line */
 
 

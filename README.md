@@ -14,6 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.9 =
+* Required plugins
+* Changed Folder name
+    -TGM-Plugin-Activation-2.6.1 --> bundled-plugins
+
 = 1.8 =
 * Fuck You Pay Me
 
