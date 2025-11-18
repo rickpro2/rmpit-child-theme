@@ -31,7 +31,7 @@
  * Plugin:
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
-require_once get_stylesheet_directory() . '/path/to/class-tgm-plugin-activation.php';
+require_once get_stylesheet_directory() . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'rmpit_register_required_plugins' );
 
@@ -59,6 +59,7 @@ function rmpit_register_required_plugins() {
 	 */
 	$plugins = array(
 
+		/*
 		// This is an example of how to include a plugin bundled with a theme.
 		array(
 			'name'               => 'TGM Example Plugin', // The plugin name.
@@ -108,6 +109,12 @@ function rmpit_register_required_plugins() {
 			'slug'        => 'wordpress-seo',
 			'is_callable' => 'wpseo_init',
 		),
+		*/
+
+
+
+
+
 
 	);
 
