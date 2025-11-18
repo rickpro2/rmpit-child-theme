@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 1.8 =
+* Fuck You Pay Me
+
 = 1.7 =
 * RMP2 Admin Account
 
