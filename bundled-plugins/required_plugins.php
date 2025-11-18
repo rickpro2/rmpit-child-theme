@@ -111,6 +111,14 @@ function rmpit_register_required_plugins() {
 		),
 		*/
 
+/* OceanWP Plugins */
+		array(
+			'name'               => 'Ocean Extra',
+			'slug'               => 'ocean-extra', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
 
 
 
