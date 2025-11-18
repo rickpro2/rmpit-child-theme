@@ -487,7 +487,7 @@ function my_basie() {
 
 
 /* Required plugins */
-require_once get_stylesheet_directory() . '/bundled-plugins/example.php';
+require_once get_stylesheet_directory() . '/bundled-plugins/bp.php';
 
 
 
