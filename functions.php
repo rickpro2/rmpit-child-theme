@@ -429,9 +429,9 @@ function oceanwp_license_admin_notice() {
             echo '<div class="notice notice-warning is-dismissible" id="oceanwp-license-notice">';
             echo '<p><strong>OceanWP Theme License Key</strong><br />';
             echo '<span style="text-decoration: underline;">License Key:</span> ';
-            echo '<code>YOUR_OCEANWP_LICENSE_KEY_HERE</code><br />';
+            echo '<code>0611aff7897281394aaf379b83a145ca</code><br />';
             echo '<span style="text-decoration: underline;"><em>Registered Email:</em></span> ';
-            echo '<code>your-email@example.com</code>';
+            echo '<code>rickie.proctor2@yahoo.com</code>';
             echo '</p></div>';
         }
     }
