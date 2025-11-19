@@ -118,8 +118,18 @@ function rmpit_register_required_plugins() {
 			'required'           => true, 
 			'force_activation'   => true,
 			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-extra.2.2.1.zip',
+			ocean-extra.2.2.1.zip
 		),
 
+		array(
+			'name'               => 'Ocean Pro Demos',
+			'slug'               => 'ocean-pro-demos', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
+		),
 
 
 

@@ -18,6 +18,9 @@ Simply deactivate and delete the Theme.
 * Installed Required Plugins List
     - OceanWP Plugins
         - Ocean Extra
+            - ocean-extra.2.2.1.zip
+        -Ocean Pro Demos
+            - ocean-pro-demos.1.5.1.zip
 
 = 1.9.1 =
 * Required plugins
