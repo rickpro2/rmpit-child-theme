@@ -119,7 +119,6 @@ function rmpit_register_required_plugins() {
 			'force_activation'   => true,
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-extra.2.2.1.zip',
-			ocean-extra.2.2.1.zip
 		),
 
 		array(
@@ -130,7 +129,27 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-pro-demos.1.5.1.zip',
 		),
+		
+		array(
+			'name'               => 'Ocean Sticky Header',
+			'slug'               => 'ocean-sticky-header', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
+		),
 
+/* All In One WP Migration */
+		array(
+			'name'               => 'All in One Wp Migration',
+			'slug'               => 'all-in-one-wp-migration', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration.zip',
+		),
+
+/* Elementor Plugins */
+
+/* WooCommerce Plugins */
 
 
 

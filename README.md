@@ -14,6 +14,15 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.1 =
+* Installed Required Plugins List
+    - All In One WP Migration
+        - All In One WP Migration
+            - all-in-one-wp-migration.zip
+    - OceanWP Plugins
+        - Ocean Sticky Header
+            - ocean-sticky-header.2.1.2   
+
 = 2.0 =
 * Installed Required Plugins List
     - OceanWP Plugins
