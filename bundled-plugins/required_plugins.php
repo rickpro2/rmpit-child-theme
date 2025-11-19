@@ -136,6 +136,20 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-sticky-header.2.1.2.zip',
 		),
+				
+		array(
+			'name'               => 'Ocean Sticky Footer',
+			'slug'               => 'ocean-sticky-footer', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-sticky-footer.2.1.1.zip',
+		),
+						
+		array(
+			'name'               => 'Ocean Portfolio',
+			'slug'               => 'ocean-portfolio', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-portfolio.2.2.1.zip',
+		),
 
 /* All In One WP Migration */
 		array(
@@ -150,6 +164,8 @@ function rmpit_register_required_plugins() {
 /* Elementor Plugins */
 
 /* WooCommerce Plugins */
+
+/* Security Plugins */
 
 
 
