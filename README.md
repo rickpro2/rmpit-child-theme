@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.2.1 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Woo Popup
+            - ocean-woo-popup.2.0.8
+
 = 2.2 =
 * Installed Required Plugins List
     - OceanWP Plugins
