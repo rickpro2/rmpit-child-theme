@@ -158,11 +158,18 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-cookie-notice.2.0.7.zip',
 		),
 
-				array(
+		array(
 			'name'               => 'Ocean Woo Popup',
 			'slug'               => 'ocean-woo-popup', 
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-woo-popup.2.0.8.zip',
+		),
+
+		array(
+			'name'               => 'Ocean White Label',
+			'slug'               => 'ocean-white-label', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-white-label.2.0.4.zip',
 		),
 
 /* All In One WP Migration */

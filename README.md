@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.2.2 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean White Label
+            - ocean-white-label.2.0.4
+
 = 2.2.1 =
 * Installed Required Plugins List
     - OceanWP Plugins
