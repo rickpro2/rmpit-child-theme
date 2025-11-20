@@ -150,6 +150,13 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-portfolio.2.2.1.zip',
 		),
+						
+		array(
+			'name'               => 'Ocean Cookie Notice',
+			'slug'               => 'ocean-cookie-notice', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-cookie-notice.2.0.7.zip',
+		),
 
 /* All In One WP Migration */
 		array(

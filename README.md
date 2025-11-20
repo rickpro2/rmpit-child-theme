@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.2 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Cookie Notice
+            - ocean-cookie-notice.2.0.7   
+
 = 2.1.1 =
 * Installed Required Plugins List
     - OceanWP Plugins
