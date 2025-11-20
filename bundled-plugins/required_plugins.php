@@ -172,6 +172,13 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-white-label.2.0.4.zip',
 		),
 
+		array(
+			'name'               => 'Ocean Popup Login',
+			'slug'               => 'ocean-popup-login', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-popup-login.2.1.8.zip',
+		),
+
 /* All In One WP Migration */
 		array(
 			'name'               => 'All in One Wp Migration',
