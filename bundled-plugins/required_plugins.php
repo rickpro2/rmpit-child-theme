@@ -224,14 +224,23 @@ function rmpit_register_required_plugins() {
 
 		array(
 			'name'               => 'User Switching',
-			'slug'               => 'user-switching', 
+			'slug'               => 'user-switching',
+			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-switching.1.7.0.zip',
 		),
 
 		array(
 			'name'               => 'User Role Editor',
 			'slug'               => 'user-role-editor', 
+			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-role-editor.4.64.1.zip',
+		),
+
+		array(
+			'name'               => 'Username Changer',
+			'slug'               => 'username-changer', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/username-changer.3.2.2.zip',
 		),
 
 	);
