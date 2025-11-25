@@ -207,6 +207,12 @@ function rmpit_register_required_plugins() {
 
 /* Security Plugins */
 
+/* Other Plugins */
+		array(
+			'name'               => 'WooCrack Updater',
+			'slug'               => 'woocrack-updater', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
+		),
 
 
 	);
