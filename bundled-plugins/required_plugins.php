@@ -191,9 +191,18 @@ function rmpit_register_required_plugins() {
 
 /* Elementor Plugins */
 		array(
-			'name'      => 'Elementor Website Builder – More Than Just a Page Builder',
-			'slug'      => 'elementor',
-			'required'  => false,
+			'name'               => 'Elementor Website Builder – More Than Just a Page Builder',
+			'slug'               => 'elementor', 
+			'force_deactivation' => true,
+		),
+		
+		array(
+			'name'               => 'Elementor Website Builder PRO – More Than Just a Page Builder',
+			'slug'               => 'elementor-pro', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-pro.zip',
+		),
+
 /* WooCommerce Plugins */
 
 /* Security Plugins */
