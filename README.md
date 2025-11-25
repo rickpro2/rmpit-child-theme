@@ -14,6 +14,14 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.9 =
+* Installed Required Plugins List
+    - Mail Plugins
+        - SureMail – SMTP and Email Logs Plugin with Amazon SES, Postmark, and Other Providers
+                - suremails
+        - WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin
+                - wp-mail-smtp
+
 = 2.8 =
 * Installed Required Plugins List
     - WooCommerce Plugins

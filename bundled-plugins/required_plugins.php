@@ -233,6 +233,19 @@ function rmpit_register_required_plugins() {
 
 /* Security Plugins */	
 
+/* Mail Plugins */	
+		array(
+			'name'               => 'SureMail – SMTP and Email Logs Plugin with Amazon SES, Postmark, and Other Providers',
+			'slug'               => 'suremails',
+			'force_deactivation' => true,
+		),
+
+		array(
+			'name'               => 'WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin',
+			'slug'               => 'wp-mail-smtp',
+			'force_deactivation' => true,
+		),
+
 /* Other Plugins */
 		array(
 			'name'               => 'WooCrack Updater',
