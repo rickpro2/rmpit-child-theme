@@ -14,6 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.2.4 =
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Elementor Website Builder – More Than Just a Page Builder
+
 = 2.2.3 =
 * Installed Required Plugins List
     - OceanWP Plugins

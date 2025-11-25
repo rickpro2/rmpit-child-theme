@@ -190,7 +190,10 @@ function rmpit_register_required_plugins() {
 		),
 
 /* Elementor Plugins */
-
+		array(
+			'name'      => 'Elementor Website Builder – More Than Just a Page Builder',
+			'slug'      => 'elementor',
+			'required'  => false,
 /* WooCommerce Plugins */
 
 /* Security Plugins */
