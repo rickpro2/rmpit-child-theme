@@ -202,6 +202,14 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-pro.zip',
 		),
+		
+		array(
+			'name'               => 'Elementor Extras',
+			'slug'               => 'elementor-extras', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-extras.zip',
+		),
+
 
 /* WooCommerce Plugins */
 

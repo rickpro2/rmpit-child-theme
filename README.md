@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.4 =
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Elementor Extras
+                - elementor-extras
+
 = 2.3.2 =
 * Installed Required Plugins List
     - Other Plugins
@@ -68,8 +74,6 @@ Simply deactivate and delete the Theme.
             - ocean-sticky-footer.2.1.1   
         - Ocean Portfolio
             - ocean-portfolio.2.2.1 
-
-
 
 = 2.1 =
 * Installed Required Plugins List
