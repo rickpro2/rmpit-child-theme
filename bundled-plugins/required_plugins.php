@@ -212,6 +212,25 @@ function rmpit_register_required_plugins() {
 
 
 /* WooCommerce Plugins */
+		array(
+			'name'               => 'WooCommerce',
+			'slug'               => 'woocommerce', 
+			'force_deactivation' => true,
+		),		
+
+		array(
+			'name'               => 'WooCommerce Square',
+			'slug'               => 'woocommerce-square',
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-square.zip',
+		),
+
+		array(
+			'name'               => 'WooCommerce Shipmnet Tracking',
+			'slug'               => 'woocommerce-shipment-tracking',
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
+		),
 
 /* Security Plugins */	
 

@@ -14,6 +14,16 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.8 =
+* Installed Required Plugins List
+    - WooCommerce Plugins
+        - WooCommerce 
+                - woocommerce
+        - WooCommerce Square
+                - woocommerce-square
+        - WooCommerce Shipment Tracking
+                - woocommerce-shipment-tracking
+               
 = 2.7 =
 * Installed Required Plugins List
     - Other Plugins
