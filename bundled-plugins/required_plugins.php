@@ -214,6 +214,11 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocrack-updater-plugin-2.0.zip',
 		),
 
+		array(
+			'name'               => 'User Switching',
+			'slug'               => 'user-switching', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-switching.1.7.0.zip',
+		),
 
 	);
 
