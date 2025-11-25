@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.0 =
+* Installed Required Plugins List
+    - Other Plugins
+        - Code Snippets
+                - code-snippets
+
 = 2.9 =
 * Installed Required Plugins List
     - Mail Plugins

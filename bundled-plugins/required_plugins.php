@@ -274,6 +274,12 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/username-changer.3.2.2.zip',
 		),
 
+		array(
+			'name'               => 'Code Snippets',
+			'slug'               => 'code-snippets', 
+			'force_deactivation' => true,
+		),
+
 	);
 
 	/*
