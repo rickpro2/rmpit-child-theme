@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 2.6 =
+* Installed Required Plugins List
+    - Other Plugins
+        - User Switching
+                - user-role-editor.4.64.1
+
 = 2.4 =
 * Installed Required Plugins List
     - Elementor Plugins

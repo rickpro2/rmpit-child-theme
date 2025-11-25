@@ -228,6 +228,12 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-switching.1.7.0.zip',
 		),
 
+		array(
+			'name'               => 'User Role Editor',
+			'slug'               => 'user-role-editor', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/user-role-editor.4.64.1.zip',
+		),
+
 	);
 
 	/*
