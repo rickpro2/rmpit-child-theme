@@ -213,7 +213,13 @@ function rmpit_register_required_plugins() {
 
 /* WooCommerce Plugins */
 
-/* Security Plugins */
+/* Security Plugins */	
+		array(
+			'name'               => 'iThemes Security Pro',
+			'slug'               => 'ithemes-security-pro', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ithemes-security-pro.zip',
+		),
 
 /* Other Plugins */
 		array(
