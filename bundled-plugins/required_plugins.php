@@ -209,6 +209,13 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/elementor-extras.zip',
 		),
+				
+		array(
+			'name'               => 'Pro Elements',
+			'slug'               => 'pro-elements', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/pro-elements.zip',
+		),
 
 
 /* WooCommerce Plugins */
