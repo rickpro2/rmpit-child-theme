@@ -226,10 +226,9 @@ function rmpit_register_required_plugins() {
 		),
 
 		array(
-			'name'               => 'WooCommerce Shipmnet Tracking',
-			'slug'               => 'woocommerce-shipment-tracking',
+			'name'               => 'PDF Invoices & Packing Slips for WooCommerce',
+			'slug'               => 'woocommerce-pdf-invoices-packing-slips',
 			'force_deactivation' => true,
-			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/woocommerce-shipment-tracking.zip',
 		),
 
 /* Security Plugins */	
