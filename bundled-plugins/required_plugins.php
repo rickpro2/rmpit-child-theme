@@ -197,7 +197,7 @@ function rmpit_register_required_plugins() {
 		),
 
 		array(
-			'name'               => 'All in One Wp Migrationv Unlimited Extension',
+			'name'               => 'All in One Wp Migration Unlimited Extension',
 			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip',
