@@ -189,6 +189,13 @@ function rmpit_register_required_plugins() {
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration.zip',
 		),
 
+		array(
+			'name'               => 'All in One Wp Migrationv Unlimited Extension',
+			'slug'               => 'all-in-one-wp-migration-unlimited-extension', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/all-in-one-wp-migration-unlimited-extension.zip',
+		),		
+
 /* Elementor Plugins */
 		array(
 			'name'               => 'Elementor Website Builder – More Than Just a Page Builder',

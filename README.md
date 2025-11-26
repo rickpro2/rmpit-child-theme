@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.3 =
+* Installed Required Plugins List
+    - All In One WP Migration
+        - All In One WP Migration
+            - all-in-one-wp-migration.zip
+
 = 3.2 =
 * Installed Required Plugins List
     - Security Plugins
