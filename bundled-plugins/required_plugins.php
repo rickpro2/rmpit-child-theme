@@ -273,6 +273,14 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 		),
 
+/* Form Builder Plugins */	
+		array(
+			'name'               => 'WPForms Pro',
+			'slug'               => 'wpforms-pro', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/wpforms-pro.zip',
+		),
+
 /* Other Plugins */
 		array(
 			'name'               => 'WooCrack Updater',
