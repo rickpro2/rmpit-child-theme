@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.4 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Gutenberg Blocks
+            - ocean-gutenberg-blocks.1.1.7
+
 = 3.3 =
 * Installed Required Plugins List
     - All In One WP Migration

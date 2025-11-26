@@ -178,6 +178,13 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-popup-login.2.1.8.zip',
 		),
+		
+		array(
+			'name'               => 'Ocean Gutenberg Blocks',
+			'slug'               => 'ocean-gutenberg-blocks', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-gutenberg-blocks.1.1.7.zip',
+		),
 
 /* All In One WP Migration */
 		array(
