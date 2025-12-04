@@ -14,6 +14,19 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.6 =
+* Installed Required Plugins List
+    - Other Plugins
+        - Yoast Duplicate Post
+            - duplicate-post
+        - Advanced Database Cleaner – Optimize & Clean database to Speed Up Site Performance
+            - advanced-database-cleaner
+        - Simple Page Ordering
+            - simple-page-ordering
+    - WooCommerce Plugins
+        - Kadence WooCommerce Email Designer
+            - kadence-woocommerce-email-designer
+
 = 3.5 =
 * Installed Required Plugins List
     - OceaForm BuildernWP Plugins

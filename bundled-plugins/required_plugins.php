@@ -251,6 +251,12 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'woocommerce-pdf-invoices-packing-slips',
 			'force_deactivation' => true,
 		),
+		
+		array(
+			'name'               => 'Kadence WooCommerce Email Designer',
+			'slug'               => 'kadence-woocommerce-email-designer',
+			'force_deactivation' => true,
+		),
 
 /* Security Plugins */	
 		array(
@@ -317,6 +323,25 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'code-snippets', 
 			'force_deactivation' => true,
 		),
+
+		array(
+			'name'               => 'Yoast Duplicate Post',
+			'slug'               => 'duplicate-post', 
+			'force_deactivation' => true,
+		),
+
+		array(
+			'name'               => 'Advanced Database Cleaner – Optimize & Clean database to Speed Up Site Performance',
+			'slug'               => 'advanced-database-cleaner', 
+			'force_deactivation' => true,
+		),
+
+		array(
+			'name'               => 'Simple Page Ordering',
+			'slug'               => 'simple-page-ordering', 
+			'force_deactivation' => true,
+		),
+
 
 	);
 
