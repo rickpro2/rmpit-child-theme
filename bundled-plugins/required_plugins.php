@@ -342,6 +342,11 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 		),
 
+		array(
+			'name'               => 'WP Reset',
+			'slug'               => 'wp-reset', 
+			'force_deactivation' => true,
+		),
 
 	);
 
