@@ -279,7 +279,14 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 		),
 
-/* Form Builder Plugins */	
+/* Form Builder Plugins */
+
+		array(
+			'name'               => 'WPForms – Easy Form Builder for WordPress – Contact Forms, Payment Forms, Surveys, & More',
+			'slug'               => 'wpforms-lite',
+			'force_deactivation' => true,
+		),
+
 		array(
 			'name'               => 'WPForms Pro',
 			'slug'               => 'wpforms-pro', 
