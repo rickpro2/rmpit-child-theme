@@ -14,128 +14,214 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
-= 2.8.1 =
-* All-in-One WP Migration Unlimited Extension License Key
+= 3.8 =
+* Installed Required Plugins List
+    - Form Builder Plugins
+        - WPForms
+            - wpforms-lite
+
+= 3.7 =
+* Installed Required Plugins List
+    - Other Plugins
+        - WP Reset
+            - wp-reset
+
+= 3.6 =
+* Installed Required Plugins List
+    - Other Plugins
+        - Yoast Duplicate Post
+            - duplicate-post
+        - Advanced Database Cleaner – Optimize & Clean database to Speed Up Site Performance
+            - advanced-database-cleaner
+        - Simple Page Ordering
+            - simple-page-ordering
+    - WooCommerce Plugins
+        - Kadence WooCommerce Email Designer
+            - kadence-woocommerce-email-designer
+
+= 3.5 =
+* Installed Required Plugins List
+    - OceaForm BuildernWP Plugins
+        - WPForms Pro WordPress Form Builder 1.9.8.2
+            - wpforms-pro
+
+= 3.4 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Gutenberg Blocks
+            - ocean-gutenberg-blocks.1.1.7
+
+= 3.3 =
+* Installed Required Plugins List
+    - All In One WP Migration
+        - All In One WP Migration
+            - all-in-one-wp-migration.zip
+
+= 3.2 =
+* Installed Required Plugins List
+    - Security Plugins
+        - iThemes Security Pro
+                - ithemes-security-pro
+
+
+= 3.1 =
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Pro Elements
+                - pro-elements
+
+= 3.0 =
+* Installed Required Plugins List
+    - Other Plugins
+        - Code Snippets
+                - code-snippets
+
+= 2.9 =
+* Installed Required Plugins List
+    - Mail Plugins
+        - SureMail – SMTP and Email Logs Plugin with Amazon SES, Postmark, and Other Providers
+                - suremails
+        - WP Mail SMTP by WPForms – The Most Popular SMTP and Email Log Plugin
+                - wp-mail-smtp
 
 = 2.8 =
-* bundled-plugins folder added:
-	- Elementor Pro WordPress Plugin 3.0.4
-
+* Installed Required Plugins List
+    - WooCommerce Plugins
+        - WooCommerce 
+                - woocommerce
+        - WooCommerce Square
+                - woocommerce-square
+        - WooCommerce Shipment Tracking
+                - woocommerce-shipment-tracking
+               
 = 2.7 =
-* bundled-plugins folder added:
-	- WooCommerce Give Products 1.2.1
+* Installed Required Plugins List
+    - Other Plugins
+        - Username Changer
+                - username-changer.3.2.2
 
 = 2.6 =
-* Updated Plugin Update Checker
-
-= 2.5 =
-* Removed 'Editor Switcher' Requirment as force use
-* required plugin Add
-	- SureMail – WordPress SMTP and Email Logs Plugin
+* Installed Required Plugins List
+    - Other Plugins
+        - User Switching
+                - user-role-editor.4.64.1
 
 = 2.4 =
-* RMP2 Admin Account
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Elementor Extras
+                - elementor-extras
+
+= 2.3.2 =
+* Installed Required Plugins List
+    - Other Plugins
+        - User Switching
+                - user-switching.1.7.0
+
+= 2.3.1 =
+* Installed Required Plugins List
+    - Other Plugins
+        - WooCrack Updater
+                - woocrack-updater-plugin-2.0
 
 = 2.3 =
-* bundled-plugins folder added:
-	- anywhere-elementor-pro
-	- elementor-extras
-	
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Elementor Website Builder PRO – More Than Just a Page Builder
+                - elementor-pro
+
+= 2.2.4 =
+* Installed Required Plugins List
+    - Elementor Plugins
+        - Elementor Website Builder – More Than Just a Page Builder
+
+= 2.2.3 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Popup Login
+            - ocean-popup-login.2.1.8
+
+= 2.2.2 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean White Label
+            - ocean-white-label.2.0.4
+
+= 2.2.1 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Woo Popup
+            - ocean-woo-popup.2.0.8
+
 = 2.2 =
-* Display Post IDs
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Cookie Notice
+            - ocean-cookie-notice.2.0.7   
+
+= 2.1.1 =
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Sticky Header
+            - ocean-sticky-footer.2.1.1   
+        - Ocean Portfolio
+            - ocean-portfolio.2.2.1 
 
 = 2.1 =
-* bundled-plugins folder added:
-	- woocommerce-shipment-tracking
+* Installed Required Plugins List
+    - All In One WP Migration
+        - All In One WP Migration
+            - all-in-one-wp-migration.zip
+    - OceanWP Plugins
+        - Ocean Sticky Header
+            - ocean-sticky-header.2.1.2   
 
 = 2.0 =
-* Fuck You, Pay Me
+* Installed Required Plugins List
+    - OceanWP Plugins
+        - Ocean Extra
+            - ocean-extra.2.2.1.zip
+        -Ocean Pro Demos
+            - ocean-pro-demos.1.5.1.zip
+
+= 1.9.1 =
+* Required plugins
+* Changed Folder name
+    -TGM-Plugin-Activation-2.6.1 --> bundled-plugins
+
+= 1.8 =
+* Fuck You Pay Me
 
 = 1.7 =
-* bundled-plugins folder added:
-	- Kadence WooCommerce Email Designer
-
-= 1.6.3 =
-* Obscure login screen error message
-
-= 1.6.2 =
-* Customised the Admin Dashboard Footer
+* RMP2 Admin Account
 
 = 1.6.1 =
-* Screenshot Added
+* Ocean WP License Key
+    -Update Key information
 
 = 1.6 =
+* WooCrack License Key
+* All-in-One WP Migration Unlimited Extension License Key
 * Ocean WP License Key
-* WooCrack.com License Key
 
 = 1.5 =
-* Display Page IDs
-
-= 1.4.9 =
-* bundled-plugins folder:
-	- Removed the /lib/ folder
-
-= 1.4.8 =
-* bundled-plugins folder added:
-	- user-role-editor.4.64.1
-	- user-switching.1.7.0
-	- woocommerce-square
-	- woocrack-updater-plugin-2.0
-
-= 1.4.7 =
-* bundled-plugins folder added:
-	- ocean-sticky-footer.2.0.6
-	- ocean-sticky-header.2.1.2
-	- ocean-white-label.2.0.4
-	- ocean-woo-popup.2.0.8
-	- username-changer.3.2.2
-
-= 1.4.6 =
-* bundled-plugins folder added:
-	- ocean-instagram.1.2.3
-	- ocean-popup-login.2.1.8
-	- ocean-pro-demos.1.5.1
-	- ocean-side-panel.2.1.1
-
-= 1.4.5 =
-* bundled-plugins folder added:
-	- ocean-footer-callout.2.1.1
-	- ocean-full-screen.2.1.3
-	- ocean-gutenberg-blocks.1.1.7
-	- ocean-hooks.2.1.1
-
-= 1.4.4 =
-* bundled-plugins folder added:
-	- ocean-cookie-notice.2.0.7
-	- ocean-elementor-widgets.2.4.4
-	- ocean-extra.2.2.1
-
-= 1.4.3 =
-* bundled-plugins folder added:
-	- automatewoo
-	- editor-switcher
-	- ithemes-security-pro
-
-= 1.4.2 =
-* bundled-plugins folder added:
-	- all-in-one-wp-migration-unlimited-extension
-	- all-in-one-wp-migration
-
-= 1.4.1 =
-* bundled-plugins folder, removed plugins folder
+* Installed TGM-Plugin-Activation-2.6.1
 
 = 1.4 =
-* bundled-plugins folder Added
+* Display Page IDs
+* Display Post IDs
 
 = 1.3 =
-* Add URL Column To WordPress Media Library
+* Obscure Login Screen Error Message
+* Customised the Admin Dashboard Footer
 
 = 1.2 =
-* Create Admin/Webmaster User Role
+* Add URL Column To WordPress Media Library
 
 = 1.1 =
-* Plugin Update Checker folder Added
+* Create Admin/Webmaster User Role
 
 = 1.0 =
 * Github Updater
-
+    - Plugin Update Checker folder Added
+    - Updated to the "testing" branch

