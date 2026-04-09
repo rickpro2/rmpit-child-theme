@@ -14,6 +14,9 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.8.1 =
+* Installed Custom Maintenance Page
+
 = 3.8 =
 * Installed Required Plugins List
     - Form Builder Plugins

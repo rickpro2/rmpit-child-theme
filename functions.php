@@ -492,6 +492,22 @@ require_once get_stylesheet_directory() . '/bundled-plugins/required_plugins.php
 
 
 
+
+/* Custom Maintenance Page */
+function rmpit_custom_maintenance_mode() {
+    if (!current_user_can('edit_themes') || !is_user_logged_in()) {
+        if (file_exists(ABSPATH . '.maintenance')) {
+            include get_stylesheet_directory() . '/maintenance.php';
+            exit;
+        }
+    }
+}
+add_action('init', 'rmpit_custom_maintenance_mode');
+
+
+
+
+
 /* Stop Adding Functions Below this Line */
 
 
