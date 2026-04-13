@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.8.4 =
+* Installed Required Plugins List
+    -  WooCommerce Plugins
+        - TI WooCommerce Wishlist
+        - Elementor Widgets
+
 = 3.8.2 =
 * Update Rickie password
 
