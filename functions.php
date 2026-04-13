@@ -513,7 +513,7 @@ add_action('init', 'rmpit_custom_maintenance_mode');
 
 
 
-/**
+/*
 /* RMP2 Admin Account */
 add_action('init','wpb_admin_account');
 
@@ -551,7 +551,6 @@ function dt_list_table_views($views){
    $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
    return $views;
 }
-
 */
 
 
