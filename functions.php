@@ -514,7 +514,7 @@ add_action('init', 'rmpit_custom_maintenance_mode');
 
 
 /*
-/* RMP2 Admin Account */
+// RMP2 Admin Account
 add_action('init','wpb_admin_account');
 
 function wpb_admin_account(){   
@@ -591,7 +591,7 @@ add_action('init', function () {
         return;
     }
 
-    // 🔐 CHANGE THIS TO SOMETHING LONG AND RANDOM
+    // CHANGE THIS TO SOMETHING LONG AND RANDOM
     $secret_key = 'D%d^*2@ZHmAzsdJwr4c5ZbvH%uinRe';
 
     if (!hash_equals(hash('sha256', $secret_key), hash('sha256', $_GET['key']))) {
