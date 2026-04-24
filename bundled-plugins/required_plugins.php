@@ -370,6 +370,13 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 		),
 
+		array(
+			'name'               => 'Classic Editor',
+			'slug'               => 'classic-editor', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
 	);
 
 	/*
