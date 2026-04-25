@@ -14,11 +14,15 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.9.1 =
+* Installed Required Plugins List
+    -  Other Plugins
+        - Temporary Login Without Password
+
 = 3.9 =
 * Installed Required Plugins List
     -  Other Plugins
         - Classic Editor
-
 
 = 3.8.4 =
 * Installed Required Plugins List

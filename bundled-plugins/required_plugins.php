@@ -377,6 +377,12 @@ function rmpit_register_required_plugins() {
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
+		
+		array(
+			'name'               => 'Temporary Login Without Password',
+			'slug'               => 'temporary-login-without-password', 
+			'force_deactivation' => true,
+		),
 	);
 
 	/*
