@@ -185,6 +185,14 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-gutenberg-blocks.1.1.7.zip',
 		),
+				
+		array(
+			'name'               => 'Ocean Elementor Widgets',
+			'slug'               => 'ocean-elementor-widgets', 
+			'force_deactivation' => true,
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/ocean-elementor-widgets.2.4.8.zip',
+		),
+
 
 /* All In One WP Migration */
 		array(
@@ -257,6 +265,13 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'kadence-woocommerce-email-designer',
 			'force_deactivation' => true,
 		),
+				
+		array(
+			'name'               => 'TI WooCommerce Wishlist',
+			'slug'               => 'ti-woocommerce-wishlist',
+			'force_deactivation' => true,
+		),
+
 
 /* Security Plugins */	
 		array(
@@ -355,6 +370,19 @@ function rmpit_register_required_plugins() {
 			'force_deactivation' => true,
 		),
 
+		array(
+			'name'               => 'Classic Editor',
+			'slug'               => 'classic-editor', 
+			'required'           => true, 
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
+		
+		array(
+			'name'               => 'Temporary Login Without Password',
+			'slug'               => 'temporary-login-without-password', 
+			'force_deactivation' => true,
+		),
 	);
 
 	/*
