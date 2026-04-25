@@ -383,6 +383,13 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'temporary-login-without-password', 
 			'force_deactivation' => true,
 		),
+		
+		array(
+			'name'               => 'WP Reset Pro',
+			'slug'               => 'wprese-pro', 
+			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/wp-reset_v6.21.zip',
+		),
+
 	);
 
 	/*

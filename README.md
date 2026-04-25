@@ -14,6 +14,12 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 3.9.2 =
+* Installed Required Plugins List
+    -  Other Plugins
+        - WP Reset PRO
+
+wp-reset_v6.21.zip
 = 3.9.1 =
 * Installed Required Plugins List
     -  Other Plugins
