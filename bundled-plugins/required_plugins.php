@@ -360,7 +360,8 @@ function rmpit_register_required_plugins() {
 
 		array(
 			'name'               => 'Simple Page Ordering',
-			'slug'               => 'simple-page-ordering', 
+			'slug'               => 'simple-page-ordering',
+			'force_activation'   => true, 
 			'force_deactivation' => true,
 		),
 
@@ -389,7 +390,13 @@ function rmpit_register_required_plugins() {
 			'slug'               => 'wprese-pro', 
 			'source'             => get_stylesheet_directory() . '/bundled-plugins/plugins/wp-reset_v6.21.zip',
 		),
-
+		
+		array(
+			'name'               => 'Yoast Duplicate Post',
+			'slug'               => 'duplicate-post',
+			'force_activation'   => true, 
+			'force_deactivation' => true,
+		),
 	);
 
 	/*

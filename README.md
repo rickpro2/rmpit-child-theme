@@ -14,6 +14,11 @@ RMPTI base theme for WordPress.
 Simply deactivate and delete the Theme. 
 
 ### Changelog
+= 4.0 =
+* Installed Required Plugins List
+    -  Other Plugins
+        - Yoast Duplicate Post
+
 = 3.9.2 =
 * Installed Required Plugins List
     -  Other Plugins
